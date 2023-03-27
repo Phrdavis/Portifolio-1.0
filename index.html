@@ -61,15 +61,19 @@
             width: 60px;
             margin: 0em 1em;
         }
+        .about{
+            display: flex;
+            justify-content: space-evenly;
+
+        }
         #me{
             border-radius: 2em;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             width: 20em;
-            padding: 5em;
-            height: 30em;
+            padding: 3em 5em 5em 5em;
+            height: 33em;
             margin-top: 10em;
-            margin-left: 3em;
-            box-shadow: 0px 2px 2px 0px #d3d3d3;
+            box-shadow: 0px 2px 5px 0px #d3d3d3;
             text-align: justify;
         }
         #me > h1{
@@ -81,7 +85,7 @@
         }
         .logos{
             height: 4em;
-            margin: 0em 0.5em;
+            margin: 0.5em 0.5em;
         }
         #tec_logos{
             display: flex;
@@ -89,13 +93,47 @@
             align-items: center;
             flex-wrap: wrap;
         }
+        #pic_me{
+            width: 20em;
+            border: 0.5em solid #FFD9A5;
+            border-radius: 10em;
+            box-shadow: 0px 2px 5px 1px #9c9c9c;
+            margin-top: 7em;
+        }
+        .things{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hobbies{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #txt_hob{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: 1.5em;
+            color: #594438;
+            margin: 1em;
+        }
+        .hobs{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #b6bfa385;
+            padding: 2em 1em;
+            border-radius: 5em;
+            box-shadow: 0px 2px 5px 1px #9c9c9c;
+        }
+        #hob{
+            width: 4em;
+            margin: 0em 1em;
+        }
     </style>
     <title>Curriculo Online</title>
 </head>
 <body>
-    <script>
-        alert("oi")
-    </script>
     <div class="page">
         <div id="homepage">
             <img id="avatar" src="images/peeps-avatar.png" alt="Avatar Davi">
@@ -111,7 +149,7 @@
                 </div>
             </div>
         </div>
-        <div id="about">
+        <div class="about">
             <div id="me">
                 <h1>But Who am I?</h1>
                 <p>Oi, me chamo <strong>Davi Pinheiro de Souza</strong>, tenho 20 anos e sou programador/UI designer</p>
@@ -128,8 +166,18 @@
                     <img class="logos" src="images/figma.png" alt="Figma logo">
                 </div>
             </div>
-            <div id="photo"></div>
-            <div id="hobbies"></div>
+            <div class="things">
+                <div id="photo"><img id="pic_me" src="images/Me.jpeg" alt="Minha foto"></div>
+                <div class="hobbies">
+                    <div id="txt_hob">Hobbies</div>
+                    <div class="hobs">
+                        <img id="hob" src="images/ear phone.png" alt="Ouvir Musica">
+                        <img id="hob" src="images/computer.png" alt="Programar">
+                        <img id="hob" src="images/jogar.png" alt="Jogar">
+                        <img id="hob" src="images/livros.png" alt="Estudar">
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="exp"></div>
         <div id="hist"></div>
@@ -140,3 +188,4 @@
     </div>
 </body>
 </html>
+
