@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body{
+            background-color: #484848;
+        }
         .page{
             margin: auto;
             margin-top: 3em;
@@ -58,10 +61,41 @@
             width: 60px;
             margin: 0em 1em;
         }
+        #me{
+            border-radius: 2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 20em;
+            padding: 5em;
+            height: 30em;
+            margin-top: 10em;
+            margin-left: 3em;
+            box-shadow: 0px 2px 2px 0px #d3d3d3;
+            text-align: justify;
+        }
+        #me > h1{
+            font-size: 1.5em;
+        }
+        #me > p{
+            font-weight: 100;
+            color: #6e6e6e;
+        }
+        .logos{
+            height: 4em;
+            margin: 0em 0.5em;
+        }
+        #tec_logos{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
     </style>
     <title>Curriculo Online</title>
 </head>
 <body>
+    <script>
+        TODO// alert("oi")
+    </script>
     <div class="page">
         <div id="homepage">
             <img id="avatar" src="images/peeps-avatar.png" alt="Avatar Davi">
@@ -77,7 +111,26 @@
                 </div>
             </div>
         </div>
-        <div id="about"></div>
+        <div id="about">
+            <div id="me">
+                <h1>But Who am I?</h1>
+                <p>Oi, me chamo <strong>Davi Pinheiro de Souza</strong>, tenho 20 anos e sou programador/UI designer</p>
+                <p>Atualmente trabalho como suporte em T.I. e estou no terceiro semestre de Engenharia de Software. Estudo linguagem Python, HTML, CSS e JavaScript, além de Java e um pouco de Dart.</p>
+                <p>Gosto muito da área de UI Design e portanto venho estudando projetos gráficos de interfaces dentro do programa Figma</p>
+                <div id="tec_logos">
+                    <img class="logos" src="images/html.png" alt="HTML logo">
+                    <img class="logos" src="images/css.png" alt="CSS logo">
+                    <img class="logos" src="images/js.png" alt="JavaScript logo">
+                    <img class="logos" src="images/python.png" alt="Python logo">
+                    <img class="logos" class="logos" src="images/java.png" alt="Java logo">
+                    <img class="logos" src="images/dart.png" alt="Dart logo">
+                    <img class="logos" src="images/gimp.png" alt="Gimp logo">
+                    <img class="logos" src="images/figma.png" alt="Figma logo">
+                </div>
+            </div>
+            <div id="photo"></div>
+            <div id="hobbies"></div>
+        </div>
         <div id="exp"></div>
         <div id="hist"></div>
         <div id="skill"></div>
