@@ -71,15 +71,16 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             width: 20em;
             padding: 3em 5em 5em 5em;
-            height: 33em;
+            height: 40em;
             margin-top: 10em;
             box-shadow: 0px 2px 5px 0px #d3d3d3;
             text-align: justify;
         }
         #me > h1{
-            font-size: 1.5em;
+            font-size: 2em;
         }
         #me > p{
+            font-size: 1.2em;
             font-weight: 100;
             color: #6e6e6e;
         }
@@ -98,7 +99,7 @@
             border: 0.5em solid #FFD9A5;
             border-radius: 10em;
             box-shadow: 0px 2px 5px 1px #9c9c9c;
-            margin-top: 7em;
+            margin-top: 9em;
         }
         .things{
             display: flex;
@@ -129,6 +130,95 @@
         #hob{
             width: 4em;
             margin: 0em 1em;
+        }
+        .config_cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10em;
+        }
+        #container{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-direction: column;
+            background-color: #FFFFFF;
+            box-shadow: 0px 2px 5px 0px #d3d3d3;
+            border-radius: 2em;
+            width: 45em;
+            height: 40em;
+            padding: 3em 5em 3em 5em;
+        }
+        #container2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-direction: column;
+            background-color: #FFFFFF;
+            box-shadow: 0px 2px 5px 0px #d3d3d3;
+            border-radius: 2em;
+            width: 45em;
+            height: 75em;
+            padding: 3em 5em 3em 5em;
+        }
+        #exp_txt{
+            font-size: 2em;
+        }
+        .exp_body{
+            font-size: 1.2em;
+            text-align: justify;
+        }
+        #comple{
+            margin: 0em;
+            color: #969696;
+        }
+        #comple2{
+            margin: 0em;
+        }
+        .comp_container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 3em;
+        }
+        .comp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FBF0E2;
+            border-radius: 2em;
+            padding: 1em;
+            height: 1em;
+            color: #B6BFA3;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: 0.8em;
+            margin: 0.4em 0.5em;
+        }
+        #ens{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .curso{
+            width: 50em;
+            margin: 0em 0.5em;
+        }
+        .curso_cont{
+            margin: 2em 0em;
+        }
+        .logo_inst{
+            margin: 1.5em auto;
+            width: 10em;
+            height: 10em;
+            align-self: center;
+            border-radius: 10em;
+            box-shadow: 0px 2px 5px 0px #d3d3d3;
+        }
+        #logo_cont{
+            display: flex;
         }
     </style>
     <title>Curriculo Online</title>
@@ -171,7 +261,7 @@
                 <div class="hobbies">
                     <div id="txt_hob">Hobbies</div>
                     <div class="hobs">
-                        <img id="hob" src="images/ear phone.png" alt="Ouvir Musica">
+                        <a href="https://open.spotify.com/collection/tracks" target="_blank"><img id="hob" src="images/ear phone.png" alt="Ouvir Musica"></a>
                         <img id="hob" src="images/computer.png" alt="Programar">
                         <img id="hob" src="images/jogar.png" alt="Jogar">
                         <img id="hob" src="images/livros.png" alt="Estudar">
@@ -179,9 +269,81 @@
                 </div>
             </div>
         </div>
-        <div id="exp"></div>
-        <div id="hist"></div>
-        <div id="skill"></div>
+        <div class="config_cont">
+            <div id="container">
+                <h1 id="exp_txt">Experiência Profissional</h1>
+                <p class="exp_body"><strong>Estagiário de Suporte em T.I.</strong></p>
+                <p class="exp_body" id="comple">Prefeitura Municiapal de São Francisco do Sul - Estágio</p>
+                <p class="exp_body" id="comple">ago de 2021 - atualmente</p>
+                <p class="exp_body" id="comple">São Francisco do Sul - Santa Catarina, Brasil</p>
+                <p class="exp_body">- Auxiliar de T.I.: Manutenção de computadores, instalação de maquinas, limpeza de Hardware, instalação e reparo de impressoras proprias e tercerizadas, formatação de sistema operacional Windows 7, 10 e 11, recuperação de dados em HD, auxilio a funcionarios da empressa, abertura e fechamento de chamados.</p>
+                <p class="exp_body">- Desenvolvedor Python: Criação de interface gráfica para sistema de auto-atendimento utilizando linguagem Python, modulo Tkinter. (Esta em funcionamento atualmente na empresa).</p>
+                <div class="comp_container">
+                    <p class="comp">Python</p>
+                    <p class="comp">Suporte</p>
+                    <p class="comp">Desenvolvedor</p>
+                    <p class="comp">Sistema</p>
+                    <p class="comp">Manutenção</p>
+                    <p class="comp">Chamados</p>
+                    <p class="comp">Estágio</p>
+                    <p class="comp">Operações em TI</p>
+                    <p class="comp">Software</p>
+                    <p class="comp">Suporte de impressora</p>
+                    <p class="comp">Suporte Técnico</p>
+                </div>
+            </div>
+        </div>
+        <div class="config_cont">
+            <div id="container2">
+                <div class="curso_cont">
+                    <h1 id="exp_txt">Histórico Acadêmico</h1>
+                    <div class="curso">
+                        <p class="exp_body"><strong>Engenharia de Software</strong></p>
+                        <p class="exp_body" id="comple2">Univille - Universidade da Região de Joinville - Bacharel</p>
+                        <p class="exp_body" id="comple2">Mar de 2022 - Jul de 2026</p>
+                        <p class="exp_body" id="comple2">Status: Cursando</p>
+                        <p class="exp_body" id="comple2">Joinville, Santa Catarina - Brasil</p>
+                    </div>
+                    <div class="comp_container">
+                        <p class="comp">Python</p>
+                        <p class="comp">Desenvolvedor</p>
+                        <p class="comp">Sistema</p>
+                        <p class="comp">Operações em TI</p>
+                        <p class="comp">Software</p>
+                        <p class="comp">Desenvolvimento Web</p>
+                        <p class="comp">Orientação A Objetos</p>
+                        <p class="comp">Java</p>
+                        <p class="comp">Engenharia de Requisitos</p>
+                        <p class="comp">Banco de Dados</p>
+                    </div>
+                    <div id="logo_cont"><img class="logo_inst"src="images/univille.png" alt="Univille">
+                    </div>
+                </div>
+                <div class="curso_cont">
+                    <div class="curso">
+                        <p class="exp_body"><strong>Automação Industrial</strong></p>
+                        <p class="exp_body" id="comple2">IFC - Instituto Federal Catarinense - Técnico</p>
+                        <p class="exp_body" id="comple2">Fev de 2018 - Dez de 2020</p>
+                        <p class="exp_body" id="comple2">Status: Completo</p>
+                        <p class="exp_body" id="comple2">São Francisco do Sul, Santa Catarina - Brasil</p>
+                    </div>
+                    <div class="comp_container">
+                        <p class="comp">CLP</p>
+                        <p class="comp">Eletrecidade</p>
+                        <p class="comp">Arduino</p>
+                        <p class="comp">Eletrônica Geral</p>
+                        <p class="comp">Automação</p>
+                    </div>
+                    <div id="logo_cont"><img class="logo_inst"src="images/ifc.png" alt="Univille">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="config_cont">
+            <div id="container">
+
+            </div>
+        </div>
         <div id="curso"></div>
         <div id="tec"></div>
         <div id="proj"></div>
