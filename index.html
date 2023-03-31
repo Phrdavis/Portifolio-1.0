@@ -137,7 +137,7 @@
             align-items: center;
             margin-top: 10em;
         }
-        #container{
+        #exp{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             display: flex;
             justify-content: center;
@@ -150,7 +150,7 @@
             height: 40em;
             padding: 3em 5em 3em 5em;
         }
-        #container2{
+        #hist{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             display: flex;
             justify-content: center;
@@ -162,6 +162,32 @@
             width: 45em;
             height: 75em;
             padding: 3em 5em 3em 5em;
+        }
+        #soft{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-direction: column;
+            background-color: #FFFFFF;
+            box-shadow: 0px 2px 5px 0px #d3d3d3;
+            border-radius: 2em;
+            width: 49em;
+            height: 51em;
+            padding: 3em 3em 3em 3em;
+        }
+        #cursos{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: space-evenly;
+            align-self: center;
+            flex-direction: column;
+            background-color: #FFFFFF;
+            box-shadow: 0px 2px 5px 0px #d3d3d3;
+            border-radius: 2em;
+            width: 49em;
+            height: 35em;
+            padding: 3em 3em 3em 3em;
         }
         #exp_txt{
             font-size: 2em;
@@ -220,6 +246,91 @@
         #logo_cont{
             display: flex;
         }
+        .skills{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .skill_bloc{
+            background-color: #FFFFFF;
+            border-radius: 1em;
+            width: 23.5em;
+            height: 7em;
+            box-shadow: 0px 2px 5px 0px #d3d3d3;
+            margin-top: 2em;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+        .sigla{
+            width: 2.5em;
+            height: 2.5em;
+            box-shadow: 0px 2px 5px 0px #d3d3d3;
+            border-radius: 0.8em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 1000;
+            font-size: 2em;
+            color: #B6BFA3;
+        }
+        .lvl_txt{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .skill_txt{
+            margin: 0em 0em 1em 0em;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        .nivel_skill{
+            display: flex;
+            flex-direction: row;
+        }
+        .lvl_posi{
+            width: 1em;
+            height: 1em;
+            border-radius: 10em;
+            background-color: #594438;
+            margin: 0em 0.2em;
+        }
+        .lvl_nega{
+            width: 1em;
+            height: 1em;
+            border-radius: 10em;
+            background-color: #BFB6B2;
+            margin: 0em 0.2em;
+        }
+        .cont_cur{
+            display: flex;
+
+        }
+        .cont_icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 6em;
+        }
+        .icon_ling{
+            width: 4em;
+            height: 4em;
+        }
+        .curso_name{
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        .curso_info{
+            opacity: 54%;
+        }
+        .curso_row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     </style>
     <title>Curriculo Online</title>
 </head>
@@ -270,7 +381,7 @@
             </div>
         </div>
         <div class="config_cont">
-            <div id="container">
+            <div id="exp">
                 <h1 id="exp_txt">Experiência Profissional</h1>
                 <p class="exp_body"><strong>Estagiário de Suporte em T.I.</strong></p>
                 <p class="exp_body" id="comple">Prefeitura Municiapal de São Francisco do Sul - Estágio</p>
@@ -294,7 +405,7 @@
             </div>
         </div>
         <div class="config_cont">
-            <div id="container2">
+            <div id="hist">
                 <div class="curso_cont">
                     <h1 id="exp_txt">Histórico Acadêmico</h1>
                     <div class="curso">
@@ -340,11 +451,296 @@
             </div>
         </div>
         <div class="config_cont">
-            <div id="container">
-
+            <div id="soft">
+                <div class="curso_cont">
+                    <h1 id="exp_txt">Soft Skills</h1>
+                    <div class="skills">
+                        <div class="skill_bloc">
+                            <div class="sigla">
+                                SP
+                            </div>
+                            <div class="lvl_txt">
+                                <p class="skill_txt">
+                                    Suporte
+                                </p>
+                                <div class="nivel_skill">
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill_bloc">
+                            <div class="sigla">
+                                FIG
+                            </div>
+                            <div class="lvl_txt">
+                                <p class="skill_txt">
+                                    Design Figma
+                                </p>
+                                <div class="nivel_skill">
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill_bloc">
+                            <div class="sigla">
+                                AU
+                            </div>
+                            <div class="lvl_txt">
+                                <p class="skill_txt">
+                                    Atendimento ao Usuário
+                                </p>
+                                <div class="nivel_skill">
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill_bloc">
+                            <div class="sigla">
+                                PY
+                            </div>
+                            <div class="lvl_txt">
+                                <p class="skill_txt">
+                                    Linguagem Python
+                                </p>
+                                <div class="nivel_skill">
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill_bloc">
+                            <div class="sigla">
+                                IN
+                            </div>
+                            <div class="lvl_txt">
+                                <p class="skill_txt">
+                                    Informática
+                                </p>
+                                <div class="nivel_skill">
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill_bloc">
+                            <div class="sigla">
+                                EN
+                            </div>
+                            <div class="lvl_txt">
+                                <p class="skill_txt">
+                                    Inglês
+                                </p>
+                                <div class="nivel_skill">
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill_bloc">
+                            <div class="sigla">
+                                SQL
+                            </div>
+                            <div class="lvl_txt">
+                                <p class="skill_txt">
+                                    Linguagem SQL
+                                </p>
+                                <div class="nivel_skill">
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill_bloc">
+                            <div class="sigla">
+                                RU
+                            </div>
+                            <div class="lvl_txt">
+                                <p class="skill_txt">
+                                    Russo
+                                </p>
+                                <div class="nivel_skill">
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill_bloc">
+                            <div class="sigla">
+                                WB
+                            </div>
+                            <div class="lvl_txt">
+                                <p class="skill_txt">
+                                    Desenvolvimento Web
+                                </p>
+                                <div class="nivel_skill">
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="curso"></div>
+        <div class="config_cont">
+            <div id="cursos">
+                <h1 id="exp_txt">Cursos</h1>
+                <div class="curso_row">
+                    <div class="cont_cur">
+                        <div class="cont_icon">
+                            <img class="icon_ling" src="images/python icon.png" alt="Icone de Python">
+                        </div>
+                        <div>
+                            <p class="curso_name">Curso de Python 3 - M1</p>
+                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                        </div>
+                    </div>
+                    <div class="cont_cur">
+                        <div class="cont_icon">
+                            <img class="icon_ling" src="images/computer.png" alt="Icone de Python">
+                        </div>
+                        <div>
+                            <p class="curso_name">Curso de Python 3 - M1</p>
+                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="curso_row">
+                    <div class="cont_cur">
+                        <div class="cont_icon">
+                            <img class="icon_ling" src="images/python icon.png" alt="Icone de Python">
+                        </div>
+                        <div>
+                            <p class="curso_name">Curso de Python 3 - M1</p>
+                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                        </div>
+                    </div>
+                    <div class="cont_cur">
+                        <div class="cont_icon">
+                            <img class="icon_ling" src="images/lingua-inglesa.png" alt="Icone de Python">
+                        </div>
+                        <div>
+                            <p class="curso_name">Curso de Python 3 - M1</p>
+                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="curso_row">
+                    <div class="cont_cur">
+                        <div class="cont_icon">
+                            <img class="icon_ling" src="images/cod.png" alt="Icone de Python">
+                        </div>
+                        <div>
+                            <p class="curso_name">Curso de Python 3 - M1</p>
+                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                        </div>
+                    </div>
+                    <div class="cont_cur">
+                        <div class="cont_icon">
+                            <img class="icon_ling" src="images/automacao.png" alt="Icone de Python">
+                        </div>
+                        <div>
+                            <p class="curso_name">Curso de Python 3 - M1</p>
+                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="curso_row">
+                    <div class="cont_cur">
+                        <div class="cont_icon">
+                            <img class="icon_ling" src="images/cod.png" alt="Icone de Python">
+                        </div>
+                        <div>
+                            <p class="curso_name">Curso de Python 3 - M1</p>
+                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="tec"></div>
         <div id="proj"></div>
     </div>
