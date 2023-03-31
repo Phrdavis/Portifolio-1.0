@@ -14,7 +14,7 @@
             background-color: #ffffff;
             border-radius: 1em;
             width: 1000px;
-            height: 10045px;
+            height: 6030px;
         }
         #homepage{
             background-color: #F2EEE9;
@@ -25,27 +25,163 @@
             padding-top: 3em;
         }
         #avatar{
+            position: absolute;
+            top: 6em;
+            left: 0em;
+            right: 0em;
             display: block;
             margin: auto;
             width: 250px;
             border-radius: 10em;
-            z-index: 10;
             box-shadow: 0px 4px 7px 0px #b3b3b3;
+        }
+        #blur_green1{
+            background-color: #B6BFA3;
+            border-radius: 12em;
+            width: 20em;
+            height: 15em;
+            filter: blur(2em);
+            position: absolute;
+            margin: auto;
+            top: 5em;
+            left: 0em;
+            right: 12em;
+            z-index: 0;
+        }
+        #blur_green2{
+            background-color: #B6BFA3;
+            border-radius: 12em;
+            width: 20em;
+            height: 15em;
+            filter: blur(2em);
+            position: absolute;
+            margin: auto;
+            top: 12em;
+            left: 12em;
+            right: 0em;
+            z-index: 0;
+        }
+        #blur_green3{
+            background-color: #B6BFA3;
+            border-radius: 30em;
+            width: 55em;
+            height: 55em;
+            filter: blur(10em);
+            position: absolute;
+            margin: auto;
+            top: 108em;
+            left: 0em;
+            right: 0em;
+            z-index: 0;
+        }
+        #blur_green4{
+            background-color: #B6BFA3;
+            border-radius: 30em;
+            width: 55em;
+            height: 55em;
+            filter: blur(10em);
+            position: absolute;
+            margin: auto;
+            top: 265em;
+            left: 0em;
+            right: 0em;
+            z-index: 0;
+        }
+        #blur_yellow1{
+            background-color: #F2CDA0;
+            border-radius: 12em;
+            width: 20em;
+            height: 15em;
+            filter: blur(2em);
+            position: absolute;
+            margin: auto;
+            top: 12em;
+            left: 0em;
+            right: 12em;
+            z-index: 0;
+        }
+        #blur_yellow2{
+            background-color: #F2CDA0;
+            border-radius: 12em;
+            width: 20em;
+            height: 15em;
+            filter: blur(2em);
+            position: absolute;
+            margin: auto;
+            top: 5em;
+            left: 12em;
+            right: 0em;
+            z-index: 0;
+        }
+        #blur_yellow3{
+            background-color: #F2CDA0;
+            border-radius: 30em;
+            width: 55em;
+            height: 55em;
+            filter: blur(10em);
+            position: absolute;
+            margin: auto;
+            top: 45em;
+            left: 0em;
+            right: 0em;
+            z-index: 0;
+        }
+        #blur_yellow4{
+            background-color: #F2CDA0;
+            border-radius: 30em;
+            width: 55em;
+            height: 55em;
+            filter: blur(10em);
+            position: absolute;
+            margin: auto;
+            top: 190em;
+            left: 0em;
+            right: 0em;
+            z-index: 0;
+        }
+        #blur_yellow5{
+            background-color: #F2CDA0;
+            border-radius: 30em;
+            width: 55em;
+            height: 55em;
+            filter: blur(10em);
+            position: absolute;
+            margin: auto;
+            top: 325em;
+            left: 0em;
+            right: 0em;
+            z-index: 0;
         }
         #nome{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
             color: #594438;
+            position: absolute;
+            margin: auto;
+            top: 11em;
+            left: 0em;
+            right: 0em;
+            
         }
         #funcs{
             font-family: 'Courier New', Courier, monospace;
             text-align: center;
+            position: absolute;
+            margin: auto;
+            top: 26em;
+            left: 0em;
+            right: 0em;
         }
         .navs{
             display: flex;
             justify-content: center;
             align-items: center;
             margin-top: 2em;
+            position: absolute;
+            margin: auto;
+            top: 30em;
+            left: 0em;
+            right: 0em;
         }
         .nav{
             width: 30em;
@@ -63,10 +199,16 @@
         }
         .about{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
+            position: absolute;
+            margin: auto;
+            top: 40em;
+            left: 0em;
+            right: 0em;
 
         }
         #me{
+            background-color: #ffffff;
             border-radius: 2em;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             width: 20em;
@@ -96,9 +238,9 @@
         }
         #pic_me{
             width: 20em;
-            border: 0.5em solid #FFD9A5;
+            border: 0.5em solid #ffd9a53a;
             border-radius: 10em;
-            box-shadow: 0px 2px 5px 1px #9c9c9c;
+            box-shadow: 0px 2px 5px 1px #55555580;
             margin-top: 9em;
         }
         .things{
@@ -106,6 +248,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-left: 2em;
         }
         .hobbies{
             display: flex;
@@ -123,7 +266,7 @@
             display: flex;
             flex-wrap: wrap;
             background-color: #b6bfa385;
-            padding: 2em 1em;
+            padding: 2em 0.5em;
             border-radius: 5em;
             box-shadow: 0px 2px 5px 1px #9c9c9c;
         }
@@ -131,11 +274,49 @@
             width: 4em;
             margin: 0em 1em;
         }
-        .config_cont{
+        .experiencia{
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 10em;
+            position: absolute;
+            margin: auto;
+            top: 110em;
+            left: 0em;
+            right: 0em;
+
+        }
+        .historico{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            margin: auto;
+            top: 170em;
+            left: 0em;
+            right: 0em;
+
+        }
+        .soft_skills{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            margin: auto;
+            top: 265em;
+            left: 0em;
+            right: 0em;
+
+        }
+        .cursos_me{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            margin: auto;
+            top: 335em;
+            left: 0em;
+            right: 0em;
+
         }
         #exp{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -337,6 +518,10 @@
 <body>
     <div class="page">
         <div id="homepage">
+            <div id="blur_green1"></div>
+            <div id="blur_yellow1"></div>
+            <div id="blur_yellow2"></div>
+            <div id="blur_green2"></div>
             <img id="avatar" src="images/peeps-avatar.png" alt="Avatar Davi">
             <h1 id="nome">Davi Pinheiro de Souza</h1>
             <p id="funcs">Programador - Python - UI Design</p>
@@ -350,6 +535,7 @@
                 </div>
             </div>
         </div>
+        <div id="blur_yellow3"></div>
         <div class="about">
             <div id="me">
                 <h1>But Who am I?</h1>
@@ -380,7 +566,8 @@
                 </div>
             </div>
         </div>
-        <div class="config_cont">
+        <div id="blur_green3"></div>
+        <div class="experiencia">
             <div id="exp">
                 <h1 id="exp_txt">Experiência Profissional</h1>
                 <p class="exp_body"><strong>Estagiário de Suporte em T.I.</strong></p>
@@ -404,7 +591,8 @@
                 </div>
             </div>
         </div>
-        <div class="config_cont">
+        <div id="blur_yellow4"></div>
+        <div class="historico">
             <div id="hist">
                 <div class="curso_cont">
                     <h1 id="exp_txt">Histórico Acadêmico</h1>
@@ -450,7 +638,8 @@
                 </div>
             </div>
         </div>
-        <div class="config_cont">
+        <div id="blur_green4"></div>
+        <div class="soft_skills">
             <div id="soft">
                 <div class="curso_cont">
                     <h1 id="exp_txt">Soft Skills</h1>
@@ -665,7 +854,8 @@
                 </div>
             </div>
         </div>
-        <div class="config_cont">
+        <div id="blur_yellow5"></div>
+        <div class="cursos_me">
             <div id="cursos">
                 <h1 id="exp_txt">Cursos</h1>
                 <div class="curso_row">
@@ -741,8 +931,8 @@
                 </div>
             </div>
         </div>
-        <div id="tec"></div>
-        <div id="proj"></div>
+        <!-- <div id="tec"></div>
+        <div id="proj"></div> -->
     </div>
 </body>
 </html>
