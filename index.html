@@ -14,7 +14,7 @@
             background-color: #ffffff;
             border-radius: 1em;
             width: 1000px;
-            height: 6030px;
+            height: 8030px;
         }
         #homepage{
             background-color: #F2EEE9;
@@ -83,6 +83,19 @@
             position: absolute;
             margin: auto;
             top: 265em;
+            left: 0em;
+            right: 0em;
+            z-index: 0;
+        }
+        #blur_green5{
+            background-color: #B6BFA3;
+            border-radius: 30em;
+            width: 55em;
+            height: 55em;
+            filter: blur(10em);
+            position: absolute;
+            margin: auto;
+            top: 385em;
             left: 0em;
             right: 0em;
             z-index: 0;
@@ -274,6 +287,31 @@
             width: 4em;
             margin: 0em 1em;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         .experiencia{
             display: flex;
             justify-content: center;
@@ -283,7 +321,6 @@
             top: 110em;
             left: 0em;
             right: 0em;
-
         }
         .historico{
             display: flex;
@@ -294,7 +331,6 @@
             top: 170em;
             left: 0em;
             right: 0em;
-
         }
         .soft_skills{
             display: flex;
@@ -305,7 +341,6 @@
             top: 265em;
             left: 0em;
             right: 0em;
-
         }
         .cursos_me{
             display: flex;
@@ -316,8 +351,47 @@
             top: 335em;
             left: 0em;
             right: 0em;
-
         }
+        .tecno{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            margin: auto;
+            top: 390em;
+            left: 0em;
+            right: 0em;
+        }
+        .projetos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            margin: auto;
+            top: 445em;
+            left: 0em;
+            right: 0em;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         #exp{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             display: flex;
@@ -370,6 +444,53 @@
             height: 35em;
             padding: 3em 3em 3em 3em;
         }
+        #tec{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: space-evenly;
+            align-self: center;
+            flex-direction: column;
+            background-color: #FFFFFF;
+            box-shadow: 0px 2px 5px 0px #d3d3d3;
+            border-radius: 2em;
+            width: 49em;
+            height: 35em;
+            padding: 3em 3em 3em 3em;
+        }
+        #pro{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: space-evenly;
+            align-self: center;
+            flex-direction: column;
+            background-color: #FFFFFF;
+            box-shadow: 0px 2px 5px 0px #d3d3d3;
+            border-radius: 2em;
+            width: 49em;
+            height: 40em;
+            padding: 3em 3em 3em 3em;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         #exp_txt{
             font-size: 2em;
         }
@@ -488,6 +609,7 @@
         }
         .cont_cur{
             display: flex;
+            margin: 1em 0em;
 
         }
         .cont_icon{
@@ -507,10 +629,154 @@
         .curso_info{
             opacity: 54%;
         }
-        .curso_row{
+        .curso_column{
+            height:40em;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin: 1em 0em;
+        }
+        #tecs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
+        }
+        .tec_form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 1em;
+            margin: 1em 0.5em;
+            width: 8em;
+            height: 10em;
+            box-shadow: 0px 2px 5px 0px #d3d3d3;
+        }
+        .tec_form > p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2em;
+
+        }
+        .logos_tec{
+            height: 4em;
+        }
+        #tec_txt{
+            text-align: center;
+            font-size: 2em;
+        }
+        #texts_pro{
+            display: flex;
+            flex-direction: column;
+        }
+        #proj_txt{
+            text-align: center;
+            align-self: center;
+            font-size: 1em;
+            color: #727272;
+            width: 30em;
+            margin: 0em;
+        }
+        #seta{
+            background-color: #484848;
+            border-radius: 5em;
+            width: 5em;
+            height: 5em;
+            position: absolute;
+            margin: auto;
+            top: 3em;
+            left: 43em;
+            right: 0em;
+        }
+        #seta_cima{
+            background-color: #ffffff;
+            border-radius: 5em;
+            width: 1.5em;
+            height: 0.3em;
+            position: absolute;
+            margin: auto;
+            transform: rotate(45deg);
+            top: 1.85em;
+            left: 0em;
+            right: 0em;
+        }
+        #seta_baixo{
+            background-color: #ffffff;
+            border-radius: 5em;
+            width: 1.5em;
+            height: 0.3em;
+            position: absolute;
+            margin: auto;
+            transform: rotate(-45deg);
+            top: 2.75em;
+            left: 0em;
+            right: 0em;
+        }
+        #flex_proj{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .proj_form{
+            width: 20em;
+            height: 25em;
+            background-color: #F3E5BC;
+            border-radius: 1.5em;
+            box-shadow: -20px 20px 0px 5px #999999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont_photo{
+            width: 20em;
+            background-color: #F3E5BC;
+            border-top-right-radius: 1.3em;
+            border-top-left-radius: 1.3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .photos_proj{
+            height: 9em;
+            border-top-right-radius: 1.3em;
+            border-top-left-radius: 1.3em;
+        }
+        .info_proj{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 2em 2em 1em 2em;
+            width: 15em;
+            height: 12em;
+            background-color: #FFFFFF;
+            border-radius: 1.5em;
+            margin-bottom: 1em;
+        }
+        .title_proj{
+            font-size: 1em;
+        }
+        .txt_proj{
+            font-size: 0.9em;
+            text-align: justify;
+        }
+        .link_proj{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .btn_proj{
+            padding: 0.9em 1em;
+            text-align: center;
+            width: 9em;
+            background-color: #F2CDA0;
+            opacity: 58%;
+            border-radius: 2em;
+            text-decoration: none;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.8em;
+            font-weight: bolder;
         }
     </style>
     <title>Curriculo Online</title>
@@ -858,13 +1124,40 @@
         <div class="cursos_me">
             <div id="cursos">
                 <h1 id="exp_txt">Cursos</h1>
-                <div class="curso_row">
+                <div class="curso_column">
                     <div class="cont_cur">
                         <div class="cont_icon">
                             <img class="icon_ling" src="images/python icon.png" alt="Icone de Python">
                         </div>
                         <div>
-                            <p class="curso_name">Curso de Python 3 - M1</p>
+                            <p class="curso_name">Curso de Python 3</p>
+                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                        </div>
+                    </div>
+                    <div class="cont_cur">
+                        <div class="cont_icon">
+                            <img class="icon_ling" src="images/python icon.png" alt="Icone de Python">
+                        </div>
+                        <div>
+                            <p class="curso_name">Curso de Python 3</p>
+                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                        </div>
+                    </div>
+                    <div class="cont_cur">
+                        <div class="cont_icon">
+                            <img class="icon_ling" src="images/cod.png" alt="Icone de Python">
+                        </div>
+                        <div>
+                            <p class="curso_name">Curso de HTML e CSS</p>
+                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                        </div>
+                    </div>
+                    <div class="cont_cur">
+                        <div class="cont_icon">
+                            <img class="icon_ling" src="images/cod.png" alt="Icone de Python">
+                        </div>
+                        <div>
+                            <p class="curso_name">Curso de HTML e CSS</p>
                             <p class="curso_info">Curso em Vídeo - 40 horas</p>
                         </div>
                     </div>
@@ -873,19 +1166,8 @@
                             <img class="icon_ling" src="images/computer.png" alt="Icone de Python">
                         </div>
                         <div>
-                            <p class="curso_name">Curso de Python 3 - M1</p>
-                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="curso_row">
-                    <div class="cont_cur">
-                        <div class="cont_icon">
-                            <img class="icon_ling" src="images/python icon.png" alt="Icone de Python">
-                        </div>
-                        <div>
-                            <p class="curso_name">Curso de Python 3 - M1</p>
-                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                            <p class="curso_name">Operador de Computador</p>
+                            <p class="curso_info">YesBras</p>
                         </div>
                     </div>
                     <div class="cont_cur">
@@ -893,19 +1175,8 @@
                             <img class="icon_ling" src="images/lingua-inglesa.png" alt="Icone de Python">
                         </div>
                         <div>
-                            <p class="curso_name">Curso de Python 3 - M1</p>
-                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="curso_row">
-                    <div class="cont_cur">
-                        <div class="cont_icon">
-                            <img class="icon_ling" src="images/cod.png" alt="Icone de Python">
-                        </div>
-                        <div>
-                            <p class="curso_name">Curso de Python 3 - M1</p>
-                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                            <p class="curso_name">Curso de Inglês - Interm.</p>
+                            <p class="curso_info">Influx</p>
                         </div>
                     </div>
                     <div class="cont_cur">
@@ -913,26 +1184,85 @@
                             <img class="icon_ling" src="images/automacao.png" alt="Icone de Python">
                         </div>
                         <div>
-                            <p class="curso_name">Curso de Python 3 - M1</p>
-                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="curso_row">
-                    <div class="cont_cur">
-                        <div class="cont_icon">
-                            <img class="icon_ling" src="images/cod.png" alt="Icone de Python">
-                        </div>
-                        <div>
-                            <p class="curso_name">Curso de Python 3 - M1</p>
-                            <p class="curso_info">Curso em Vídeo - 40 horas</p>
+                            <p class="curso_name">Automação Industrial</p>
+                            <p class="curso_info">Instituto Federal Catarinense</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div id="tec"></div>
-        <div id="proj"></div> -->
+        <div id="blur_green5"></div>
+        <div class="tecno">
+            <div id="tec">
+                <h1 id="tec_txt">Tecnologias</h1>
+                <div id="tecs">
+                    <div class="tec_form">
+                        <img class="logos_tec" src="images/azure.png" alt="Azure DS">
+                        <p>Azure DS</p>
+                    </div>
+                    <div class="tec_form">
+                        <img class="logos_tec" src="images/gimp.png" alt="GIMP">
+                        <p>GIMP</p>
+                    </div>
+                    <div class="tec_form">
+                        <img class="logos_tec" src="images/figma.png" alt="FIGMA">
+                        <p>Figma</p>
+                    </div>
+                    <div class="tec_form">
+                        <img class="logos_tec" src="images/vscode.png" alt="VSCODE">
+                        <p>VSCode</p>
+                    </div>
+                    <div class="tec_form">
+                        <img class="logos_tec" src="images/python icon.png" alt="PYTHON">
+                        <p>Python</p>
+                    </div>
+                    <div class="tec_form">
+                        <img class="logos_tec" src="images/java.png" alt="JAVA">
+                        <p>Java</p>
+                    </div>
+                    <div class="tec_form">
+                        <img class="logos_tec" src="images/dart.png" alt="DART">
+                        <p>Dart</p>
+                    </div>
+                    <div class="tec_form">
+                        <img class="logos_tec" src="images/css.png" alt="CSS3">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="tec_form">
+                        <img class="logos_tec" src="images/html.png" alt="HMTL5">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="tec_form">
+                        <img class="logos_tec" src="images/js.png" alt="JAVA JS">
+                        <p>JAVA SC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="blur_yellow6"></div>
+        <div class="projetos">
+            <div id="pro">
+                <div id="texts_pro">
+                    <h1 id="tec_txt">Projetos</h1>
+                    <p id="proj_txt">Projetos de Programação e Design realizados com o intuito de aprendizado e treino prático como portifólio</p>
+                </div>
+                <div id="seta">
+                    <div id="seta_cima"></div>
+                    <div id="seta_baixo"></div>
+                </div>
+                <div id="flex_proj">
+                    <div class="proj_form">
+                        <div class="cont_photo"><img class="photos_proj" src="images/Projeto Netflix 2.png" alt="Projeto Netflix"></div>
+                        <div class="info_proj">
+                            <h1 class="title_proj">Netflix App - Redesign</h1>
+                            <p class="txt_proj">Um projeto com base no estudo do aplicativo de Series e Filmes Netflix, tendo o intuito de entender e revigorar certas funções do sistema</p>
+                            <div class="link_proj"><a class="btn_proj" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Acessar Projeto</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </body>
 </html>
