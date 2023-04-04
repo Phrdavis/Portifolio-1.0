@@ -14,7 +14,7 @@
             background-color: #ffffff;
             border-radius: 1em;
             width: 1000px;
-            height: 8030px;
+            height: 10030px;
         }
         #homepage{
             background-color: #F2EEE9;
@@ -467,7 +467,7 @@
             box-shadow: 0px 2px 5px 0px #d3d3d3;
             border-radius: 2em;
             width: 49em;
-            height: 40em;
+            height: 100em;
             padding: 3em 3em 3em 3em;
         }
 
@@ -678,60 +678,34 @@
             width: 30em;
             margin: 0em;
         }
-        #seta{
-            background-color: #484848;
-            border-radius: 5em;
-            width: 5em;
-            height: 5em;
-            position: absolute;
-            margin: auto;
-            top: 3em;
-            left: 43em;
-            right: 0em;
-        }
-        #seta_cima{
-            background-color: #ffffff;
-            border-radius: 5em;
-            width: 1.5em;
-            height: 0.3em;
-            position: absolute;
-            margin: auto;
-            transform: rotate(45deg);
-            top: 1.85em;
-            left: 0em;
-            right: 0em;
-        }
-        #seta_baixo{
-            background-color: #ffffff;
-            border-radius: 5em;
-            width: 1.5em;
-            height: 0.3em;
-            position: absolute;
-            margin: auto;
-            transform: rotate(-45deg);
-            top: 2.75em;
-            left: 0em;
-            right: 0em;
-        }
         #flex_proj{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-evenly;
         }
         .proj_form{
             width: 20em;
             height: 25em;
-            background-color: #F3E5BC;
             border-radius: 1.5em;
             box-shadow: -20px 20px 0px 5px #999999;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin: 2em; 
+        }
+        #form_amarela{
+            background-color: #F3E5BC;
+        }
+        #form_roxa{
+            background-color: #A274A2;
+        }
+        #form_azul{
+            background-color: #282A36;
         }
         .cont_photo{
             width: 20em;
-            background-color: #F3E5BC;
             border-top-right-radius: 1.3em;
             border-top-left-radius: 1.3em;
             display: flex;
@@ -740,13 +714,11 @@
         }
         .photos_proj{
             height: 9em;
-            border-top-right-radius: 1.3em;
-            border-top-left-radius: 1.3em;
         }
         .info_proj{
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-between;
             padding: 2em 2em 1em 2em;
             width: 15em;
             height: 12em;
@@ -769,14 +741,23 @@
             padding: 0.9em 1em;
             text-align: center;
             width: 9em;
-            background-color: #F2CDA0;
-            opacity: 58%;
             border-radius: 2em;
             text-decoration: none;
             color: black;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 0.8em;
             font-weight: bolder;
+            box-shadow: 0px 2px 2px 0px #999999;
+        }
+        #btn_amarelo{
+            background-color: #e0c572;
+        }
+        #btn_roxo{
+            background-color: #da7dda;
+        }
+        #btn_azul{
+            color: white;
+            background-color: #545766;
         }
     </style>
     <title>Curriculo Online</title>
@@ -1251,16 +1232,55 @@
                     <div id="seta_baixo"></div>
                 </div>
                 <div id="flex_proj">
-                    <div class="proj_form">
+                    <div class="proj_form" id="form_amarela">
                         <div class="cont_photo"><img class="photos_proj" src="images/Projeto Netflix 2.png" alt="Projeto Netflix"></div>
                         <div class="info_proj">
                             <h1 class="title_proj">Netflix App - Redesign</h1>
                             <p class="txt_proj">Um projeto com base no estudo do aplicativo de Series e Filmes Netflix, tendo o intuito de entender e revigorar certas funções do sistema</p>
-                            <div class="link_proj"><a class="btn_proj" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Acessar Projeto</a></div>
+                            <div class="link_proj"><a class="btn_proj" id="btn_amarelo" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Acessar Projeto</a></div>
+                        </div>
+                    </div>
+                    <div class="proj_form" id="form_roxa">
+                        <div class="cont_photo"><img class="photos_proj" src="images/Loda.png" alt="Projeto Netflix"></div>
+                        <div class="info_proj">
+                            <h1 class="title_proj">Loda Bank App - Design</h1>
+                            <p class="txt_proj">Estudo com base em aplicativos bancários, o Loda Bank surgiu como um projeto de um banco inovador e prático.</p>
+                            <div class="link_proj"><a class="btn_proj" id="btn_roxo" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Indisponível</a></div>
+                        </div>
+                    </div>
+                    <div class="proj_form" id="form_azul">
+                        <div class="cont_photo"><img class="photos_proj" src="images/code_farmacia.png" alt="Projeto Netflix"></div>
+                        <div class="info_proj">
+                            <h1 class="title_proj">SQL - Farmácia</h1>
+                            <p class="txt_proj">Um script SQL para o controle de uma Farmacia, desde o atendimento até o fornecimento de medicação utilizando AZURE DATA STUDIO.</p>
+                            <div class="link_proj"><a class="btn_proj" id="btn_azul" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Acessar Projeto</a></div>
+                        </div>
+                    </div>
+                    <div class="proj_form" id="form_roxa">
+                        <div class="cont_photo"><img class="photos_proj" src="images/Loda.png" alt="Projeto Netflix"></div>
+                        <div class="info_proj">
+                            <h1 class="title_proj">Loda Bank App - Design</h1>
+                            <p class="txt_proj">Estudo com base em aplicativos bancários, o Loda Bank surgiu como um projeto de um banco inovador e prático.</p>
+                            <div class="link_proj"><a class="btn_proj" id="btn_roxo" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Indisponível</a></div>
+                        </div>
+                    </div>
+                    <div class="proj_form" id="form_amarela">
+                        <div class="cont_photo"><img class="photos_proj" src="images/Projeto Netflix 2.png" alt="Projeto Netflix"></div>
+                        <div class="info_proj">
+                            <h1 class="title_proj">Netflix App - Redesign</h1>
+                            <p class="txt_proj">Um script SQL para o controle de uma Farmacia, desde o atendimento até o fornecimento de medicação utilizando AZURE DATA STUDIO.</p>
+                            <div class="link_proj"><a class="btn_proj" id="btn_amarelo" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Acessar Projeto</a></div>
+                        </div>
+                    </div>
+                    <div class="proj_form" id="form_roxa">
+                        <div class="cont_photo"><img class="photos_proj" src="images/Loda.png" alt="Projeto Netflix"></div>
+                        <div class="info_proj">
+                            <h1 class="title_proj">Loda Bank App - Design</h1>
+                            <p class="txt_proj">Estudo com base em aplicativos bancários, o Loda Bank surgiu como um projeto de um banco inovador e prático.</p>
+                            <div class="link_proj"><a class="btn_proj" id="btn_azul" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Indisponível</a></div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
