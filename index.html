@@ -9,19 +9,18 @@
             background-color: #484848;
         }
         .page{
-            margin: auto;
-            margin-top: 3em;
+            margin: 3em auto ;
             background-color: #ffffff;
             border-radius: 1em;
-            width: 1000px;
-            height: 10030px;
+            width: 62.5em;
+            height: 570.6em;
         }
         #homepage{
             background-color: #F2EEE9;
             border-top-right-radius: 1em;
             border-top-left-radius: 1em;
-            width: 1000px;
-            height: 460px;
+            width: 62.5em;
+            height: 28.7em;
             padding-top: 3em;
         }
         #avatar{
@@ -100,6 +99,19 @@
             right: 0em;
             z-index: 0;
         }
+        #blur_green6{
+            background-color: #B6BFA3;
+            border-radius: 30em;
+            width: 55em;
+            height: 55em;
+            filter: blur(10em);
+            position: absolute;
+            margin: auto;
+            top: 500em;
+            left: 0em;
+            right: 0em;
+            z-index: 0;
+        }
         #blur_yellow1{
             background-color: #F2CDA0;
             border-radius: 12em;
@@ -161,6 +173,19 @@
             position: absolute;
             margin: auto;
             top: 325em;
+            left: 0em;
+            right: 0em;
+            z-index: 0;
+        }
+        #blur_yellow6{
+            background-color: #F2CDA0;
+            border-radius: 30em;
+            width: 55em;
+            height: 55em;
+            filter: blur(10em);
+            position: absolute;
+            margin: auto;
+            top: 450em;
             left: 0em;
             right: 0em;
             z-index: 0;
@@ -704,6 +729,12 @@
         #form_azul{
             background-color: #282A36;
         }
+        #form_azulclaro{
+            background-color: #5765F2;
+        }
+        #form_branca{
+            background-color: #F9F9F9;
+        }
         .cont_photo{
             width: 20em;
             border-top-right-radius: 1.3em;
@@ -759,9 +790,79 @@
             color: white;
             background-color: #545766;
         }
+        #btn_azulclaro{
+            color: white;
+            background-color: #5d64b6;
+        }
+
+        #bar{
+            width: 62.5em;
+            height: 2em;
+            background-color: #79766b;
+            position: absolute;
+            margin: auto;
+            top: 558em;
+            z-index: 1;
+        }
+
+        #footer{
+            width: 58.5em;
+            height: 12em;
+            border-bottom-left-radius: 0.8em;
+            border-bottom-right-radius: 0.8em;
+            background-color: #282A36;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            margin: auto;
+            top: 559.6em;
+            color: #949494;
+            padding: 1em 2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #infos{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 0.7em;
+        }
+        #nav_title{
+            font-size: 1.3em;
+            color: #c59d19;
+            text-align: center;
+        }
+        #email{
+            display: flex;
+            flex-direction: column;
+        }
+        #email > p{
+            margin: 0.5em 0em;
+        }
+        #links{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #flex_link{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 12em;
+            justify-content: space-around;
+        }
+        #flex_link > a{
+            text-decoration: none;
+            color: #949494;
+            margin: 0.6em 0em;
+        }
+
+        #copyright{
+            font-size: 0.8em;
+            text-align: center;
+        }
     </style>
     <title>Curriculo Online</title>
-</head>
+</head> 
 <body>
     <div class="page">
         <div id="homepage">
@@ -1221,6 +1322,7 @@
             </div>
         </div>
         <div id="blur_yellow6"></div>
+        <div id="blur_green6"></div>
         <div class="projetos">
             <div id="pro">
                 <div id="texts_pro">
@@ -1241,47 +1343,75 @@
                         </div>
                     </div>
                     <div class="proj_form" id="form_roxa">
-                        <div class="cont_photo"><img class="photos_proj" src="images/Loda.png" alt="Projeto Netflix"></div>
+                        <div class="cont_photo"><img class="photos_proj" src="images/Loda.png" alt="Projeto Loda Bank"></div>
                         <div class="info_proj">
                             <h1 class="title_proj">Loda Bank App - Design</h1>
                             <p class="txt_proj">Estudo com base em aplicativos bancários, o Loda Bank surgiu como um projeto de um banco inovador e prático.</p>
-                            <div class="link_proj"><a class="btn_proj" id="btn_roxo" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Indisponível</a></div>
+                            <div class="link_proj"><a class="btn_proj" id="btn_roxo" href="" target="_blank">Indisponível</a></div>
                         </div>
                     </div>
                     <div class="proj_form" id="form_azul">
-                        <div class="cont_photo"><img class="photos_proj" src="images/code_farmacia.png" alt="Projeto Netflix"></div>
+                        <div class="cont_photo"><img class="photos_proj" src="images/code_farmacia.png" alt="Projeto SQL Farmacia"></div>
                         <div class="info_proj">
                             <h1 class="title_proj">SQL - Farmácia</h1>
                             <p class="txt_proj">Um script SQL para o controle de uma Farmacia, desde o atendimento até o fornecimento de medicação utilizando AZURE DATA STUDIO.</p>
-                            <div class="link_proj"><a class="btn_proj" id="btn_azul" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Acessar Projeto</a></div>
+                            <div class="link_proj"><a class="btn_proj" id="btn_azul" href="https://github.com/Phrdavis/SQL_Farmacia" target="_blank">Acessar Projeto</a></div>
                         </div>
                     </div>
-                    <div class="proj_form" id="form_roxa">
-                        <div class="cont_photo"><img class="photos_proj" src="images/Loda.png" alt="Projeto Netflix"></div>
+                    <div class="proj_form" id="form_azul">
+                        <div class="cont_photo"><img class="photos_proj" src="images/code_ppt.png" alt="Projeto Pedra papel e tesoura"></div>
                         <div class="info_proj">
-                            <h1 class="title_proj">Loda Bank App - Design</h1>
-                            <p class="txt_proj">Estudo com base em aplicativos bancários, o Loda Bank surgiu como um projeto de um banco inovador e prático.</p>
-                            <div class="link_proj"><a class="btn_proj" id="btn_roxo" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Indisponível</a></div>
+                            <h1 class="title_proj">Rock, Paper, Scissors</h1>
+                            <p class="txt_proj">Este software é basicamente um jogo de pedra-papel-tesoura onde o jogador joga contra o programa de software em um aplicativo simples.</p>
+                            <div class="link_proj"><a class="btn_proj" id="btn_azul" href="https://github.com/Phrdavis/rock-paper-scissors" target="_blank">Acessar Projeto</a></div>
                         </div>
                     </div>
-                    <div class="proj_form" id="form_amarela">
-                        <div class="cont_photo"><img class="photos_proj" src="images/Projeto Netflix 2.png" alt="Projeto Netflix"></div>
+                    <div class="proj_form" id="form_azulclaro">
+                        <div class="cont_photo"><img class="photos_proj" src="images/discord.png" alt="Projeto Discord Web"></div>
                         <div class="info_proj">
-                            <h1 class="title_proj">Netflix App - Redesign</h1>
-                            <p class="txt_proj">Um script SQL para o controle de uma Farmacia, desde o atendimento até o fornecimento de medicação utilizando AZURE DATA STUDIO.</p>
-                            <div class="link_proj"><a class="btn_proj" id="btn_amarelo" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Acessar Projeto</a></div>
+                            <h1 class="title_proj">Interfaces de login</h1>
+                            <p class="txt_proj">Um repositório onde iniciei estudos atraves de paginas Web de login de determinados aplicativos, como Discord, Facebook e Instagram.</p>
+                            <div class="link_proj"><a class="btn_proj" id="btn_azulclaro" href="https://github.com/Phrdavis/Interface-de-Login" target="_blank">Acessar Projeto</a></div>
                         </div>
                     </div>
-                    <div class="proj_form" id="form_roxa">
-                        <div class="cont_photo"><img class="photos_proj" src="images/Loda.png" alt="Projeto Netflix"></div>
+                    <div class="proj_form" id="form_branca">
+                        <div class="cont_photo"><img class="photos_proj" src="images/cupom fiscal.png" alt="Projeto Netflix"></div>
                         <div class="info_proj">
-                            <h1 class="title_proj">Loda Bank App - Design</h1>
-                            <p class="txt_proj">Estudo com base em aplicativos bancários, o Loda Bank surgiu como um projeto de um banco inovador e prático.</p>
-                            <div class="link_proj"><a class="btn_proj" id="btn_azul" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Indisponível</a></div>
+                            <h1 class="title_proj">Cupom Fiscal</h1>
+                            <p class="txt_proj">Codigo Python com módulo Tkinter e OS é um emissor de cupom fiscal. Contem o valor total da compra e as informações do cliente.</p>
+                            <div class="link_proj"><a class="btn_proj" id="btn_azul" href="https://github.com/Phrdavis/tax_coupon_issuer" target="_blank">Acessar Projeto</a></div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="bar"></div>
+        <div id="footer">
+            <div id="infos">
+                <div id="contatos">
+                    <h1 id="nav_title">Contatos</h1>
+                    <p>WhatsApp:</p>
+                    <p>+55 (47) 98481 - 8904</p>
+                </div>
+                
+                <div id="email">
+                    <h1 id="nav_title">E-mail</h1>
+                    <p>davipinheiro.dev@gmail.com</p>
+                    <p>davipinheirodesouza2002@gmail.com</p>
+                    <p>davipi_sou@hotmail.com</p>
+                </div>
+                <div id="links">
+                    <h1 id="nav_title">Links</h1>
+                    <div id="flex_link">
+                        <a href="https://br.pinterest.com/Phrdavis/">Pinterest</a>
+                        <a href="https://dribbble.com/phrdavis">Dibbble</a>
+                        <a href="https://www.behance.net/davidesouza7">Behance</a>
+                        <a href="https://github.com/Phrdavis">Github</a>
+                        <a href="https://www.linkedin.com/in/phrdavis/">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+            <p id="copyright">CopyRigth © 2023, Davi Pinheiro de Souza</p>
         </div>
     </div>
 </body>
