@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/peeps-avatar-git.png">
     <style>
         body{
             background-color: #484848;
@@ -32,46 +33,44 @@
             margin: auto;
             width: 250px;
             border-radius: 10em;
-            box-shadow: 0px 4px 7px 0px #b3b3b3;
+            box-shadow: 0px 4px 7px 0px #686868;
+        }
+        .blur{
+            position: absolute;
+            margin: auto;
+            z-index: 0;
         }
         #blur_green1{
-            background-color: #B6BFA3;
             border-radius: 12em;
             width: 20em;
             height: 15em;
             filter: blur(2em);
-            position: absolute;
-            margin: auto;
             top: 5em;
             left: 0em;
             right: 12em;
-            z-index: 0;
-        }
-        #blur_green2{
             background-color: #B6BFA3;
+        }
+
+        #blur_green2{
             border-radius: 12em;
             width: 20em;
             height: 15em;
             filter: blur(2em);
-            position: absolute;
-            margin: auto;
             top: 12em;
             left: 12em;
             right: 0em;
-            z-index: 0;
+            background-color: #B6BFA3;
         }
+
         #blur_green3{
             background-color: #B6BFA3;
             border-radius: 30em;
             width: 55em;
             height: 55em;
             filter: blur(10em);
-            position: absolute;
-            margin: auto;
             top: 108em;
             left: 0em;
             right: 0em;
-            z-index: 0;
         }
         #blur_green4{
             background-color: #B6BFA3;
@@ -79,12 +78,9 @@
             width: 55em;
             height: 55em;
             filter: blur(10em);
-            position: absolute;
-            margin: auto;
             top: 265em;
             left: 0em;
             right: 0em;
-            z-index: 0;
         }
         #blur_green5{
             background-color: #B6BFA3;
@@ -92,12 +88,9 @@
             width: 55em;
             height: 55em;
             filter: blur(10em);
-            position: absolute;
-            margin: auto;
             top: 385em;
             left: 0em;
             right: 0em;
-            z-index: 0;
         }
         #blur_green6{
             background-color: #B6BFA3;
@@ -105,25 +98,20 @@
             width: 55em;
             height: 55em;
             filter: blur(10em);
-            position: absolute;
-            margin: auto;
             top: 500em;
             left: 0em;
             right: 0em;
-            z-index: 0;
         }
+        
         #blur_yellow1{
             background-color: #F2CDA0;
             border-radius: 12em;
             width: 20em;
             height: 15em;
             filter: blur(2em);
-            position: absolute;
-            margin: auto;
             top: 12em;
             left: 0em;
             right: 12em;
-            z-index: 0;
         }
         #blur_yellow2{
             background-color: #F2CDA0;
@@ -131,12 +119,9 @@
             width: 20em;
             height: 15em;
             filter: blur(2em);
-            position: absolute;
-            margin: auto;
             top: 5em;
             left: 12em;
             right: 0em;
-            z-index: 0;
         }
         #blur_yellow3{
             background-color: #F2CDA0;
@@ -144,12 +129,9 @@
             width: 55em;
             height: 55em;
             filter: blur(10em);
-            position: absolute;
-            margin: auto;
             top: 45em;
             left: 0em;
             right: 0em;
-            z-index: 0;
         }
         #blur_yellow4{
             background-color: #F2CDA0;
@@ -157,12 +139,9 @@
             width: 55em;
             height: 55em;
             filter: blur(10em);
-            position: absolute;
-            margin: auto;
             top: 190em;
             left: 0em;
             right: 0em;
-            z-index: 0;
         }
         #blur_yellow5{
             background-color: #F2CDA0;
@@ -170,12 +149,9 @@
             width: 55em;
             height: 55em;
             filter: blur(10em);
-            position: absolute;
-            margin: auto;
             top: 325em;
             left: 0em;
             right: 0em;
-            z-index: 0;
         }
         #blur_yellow6{
             background-color: #F2CDA0;
@@ -183,12 +159,9 @@
             width: 55em;
             height: 55em;
             filter: blur(10em);
-            position: absolute;
-            margin: auto;
             top: 450em;
             left: 0em;
             right: 0em;
-            z-index: 0;
         }
         #nome{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -332,92 +305,36 @@
 
 
 
-
-
-
-
-        
-        .experiencia{
+        .container_form{
             display: flex;
             justify-content: center;
             align-items: center;
             position: absolute;
             margin: auto;
+            left: 0em;
+            right: 0em;
+        }
+        #experiencia{
             top: 110em;
-            left: 0em;
-            right: 0em;
         }
-        .historico{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            margin: auto;
+        #historico{
             top: 170em;
-            left: 0em;
-            right: 0em;
         }
-        .soft_skills{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            margin: auto;
+        #soft_skills{
             top: 265em;
-            left: 0em;
-            right: 0em;
         }
-        .cursos_me{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            margin: auto;
+        #cursos_me{
             top: 335em;
-            left: 0em;
-            right: 0em;
         }
-        .tecno{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            margin: auto;
+        #tecno{
             top: 390em;
-            left: 0em;
-            right: 0em;
         }
-        .projetos{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            margin: auto;
+        #projetos{
             top: 445em;
-            left: 0em;
-            right: 0em;
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        #exp{
+        .container_atrib{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             display: flex;
             justify-content: center;
@@ -426,79 +343,37 @@
             background-color: #FFFFFF;
             box-shadow: 0px 2px 5px 0px #d3d3d3;
             border-radius: 2em;
+        }
+        #exp{
             width: 45em;
             height: 40em;
             padding: 3em 5em 3em 5em;
         }
         #hist{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-self: center;
-            flex-direction: column;
-            background-color: #FFFFFF;
-            box-shadow: 0px 2px 5px 0px #d3d3d3;
-            border-radius: 2em;
             width: 45em;
             height: 75em;
             padding: 3em 5em 3em 5em;
         }
         #soft{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-self: center;
-            flex-direction: column;
-            background-color: #FFFFFF;
-            box-shadow: 0px 2px 5px 0px #d3d3d3;
-            border-radius: 2em;
             width: 49em;
             height: 51em;
             padding: 3em 3em 3em 3em;
         }
         #cursos{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            display: flex;
-            justify-content: space-evenly;
-            align-self: center;
-            flex-direction: column;
-            background-color: #FFFFFF;
-            box-shadow: 0px 2px 5px 0px #d3d3d3;
-            border-radius: 2em;
             width: 49em;
             height: 35em;
             padding: 3em 3em 3em 3em;
         }
         #tec{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            display: flex;
-            justify-content: space-evenly;
-            align-self: center;
-            flex-direction: column;
-            background-color: #FFFFFF;
-            box-shadow: 0px 2px 5px 0px #d3d3d3;
-            border-radius: 2em;
             width: 49em;
             height: 35em;
             padding: 3em 3em 3em 3em;
         }
         #pro{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            display: flex;
-            justify-content: space-evenly;
-            align-self: center;
-            flex-direction: column;
-            background-color: #FFFFFF;
-            box-shadow: 0px 2px 5px 0px #d3d3d3;
-            border-radius: 2em;
             width: 49em;
             height: 100em;
             padding: 3em 3em 3em 3em;
         }
-
-
-
-
 
 
 
@@ -838,6 +713,10 @@
         #email > p{
             margin: 0.5em 0em;
         }
+        #email > p > a{
+            text-decoration: none;
+            color: #949494;
+        }
         #links{
             display: flex;
             flex-direction: column;
@@ -853,7 +732,7 @@
         #flex_link > a{
             text-decoration: none;
             color: #949494;
-            margin: 0.6em 0em;
+            margin: 0.6em 0.5em;
         }
 
         #copyright{
@@ -866,13 +745,13 @@
 <body>
     <div class="page">
         <div id="homepage">
-            <div id="blur_green1"></div>
-            <div id="blur_yellow1"></div>
-            <div id="blur_yellow2"></div>
-            <div id="blur_green2"></div>
+            <div class="blur" id="blur_green1"></div>
+            <div class="blur" id="blur_yellow1"></div>
+            <div class="blur" id="blur_yellow2"></div>
+            <div class="blur" id="blur_green2"></div>
             <img id="avatar" src="images/peeps-avatar.png" alt="Avatar Davi">
             <h1 id="nome">Davi Pinheiro de Souza</h1>
-            <p id="funcs">Programador - Python - UI Design</p>
+            <p id="funcs">Programador - WEB - UI Design</p>
             <div class="navs">
                 <div class="nav">
                     <a href="https://www.behance.net/davidesouza7" target="_blank"><img class="icons" src="images/behance.png" alt=""></a>
@@ -883,7 +762,7 @@
                 </div>
             </div>
         </div>
-        <div id="blur_yellow3"></div>
+        <div class="blur" id="blur_yellow3"></div>
         <div class="about">
             <div id="me">
                 <h1>But Who am I?</h1>
@@ -914,9 +793,9 @@
                 </div>
             </div>
         </div>
-        <div id="blur_green3"></div>
-        <div class="experiencia">
-            <div id="exp">
+        <div class="blur" id="blur_green3"></div>
+        <div class="container_form" id="experiencia">
+            <div class="container_atrib" id="exp">
                 <h1 id="exp_txt">Experiência Profissional</h1>
                 <p class="exp_body"><strong>Estagiário de Suporte em T.I.</strong></p>
                 <p class="exp_body" id="comple">Prefeitura Municiapal de São Francisco do Sul - Estágio</p>
@@ -939,9 +818,9 @@
                 </div>
             </div>
         </div>
-        <div id="blur_yellow4"></div>
-        <div class="historico">
-            <div id="hist">
+        <div class="blur" id="blur_yellow4"></div>
+        <div class="container_form" id="historico">
+            <div class="container_atrib" id="hist">
                 <div class="curso_cont">
                     <h1 id="exp_txt">Histórico Acadêmico</h1>
                     <div class="curso">
@@ -986,9 +865,9 @@
                 </div>
             </div>
         </div>
-        <div id="blur_green4"></div>
-        <div class="soft_skills">
-            <div id="soft">
+        <div class="blur" id="blur_green4"></div>
+        <div class="container_form" id="soft_skills">
+            <div class="container_atrib"  id="soft">
                 <div class="curso_cont">
                     <h1 id="exp_txt">Soft Skills</h1>
                     <div class="skills">
@@ -1029,7 +908,7 @@
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
@@ -1044,7 +923,7 @@
                             </div>
                             <div class="lvl_txt">
                                 <p class="skill_txt">
-                                    Atendimento ao Usuário
+                                    Atend. ao Usuário
                                 </p>
                                 <div class="nivel_skill">
                                     <div class="lvl_posi"></div>
@@ -1053,7 +932,7 @@
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
@@ -1074,8 +953,8 @@
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
@@ -1099,7 +978,7 @@
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
@@ -1121,7 +1000,7 @@
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
@@ -1144,8 +1023,8 @@
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
                                     <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
@@ -1162,12 +1041,12 @@
                                 </p>
                                 <div class="nivel_skill">
                                     <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
-                                    <div class="lvl_posi"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
+                                    <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
                                     <div class="lvl_nega"></div>
@@ -1202,9 +1081,9 @@
                 </div>
             </div>
         </div>
-        <div id="blur_yellow5"></div>
-        <div class="cursos_me">
-            <div id="cursos">
+        <div class="blur" id="blur_yellow5"></div>
+        <div class="container_form" id="cursos_me">
+            <div class="container_atrib"  id="cursos">
                 <h1 id="exp_txt">Cursos</h1>
                 <div class="curso_column">
                     <div class="cont_cur">
@@ -1273,9 +1152,9 @@
                 </div>
             </div>
         </div>
-        <div id="blur_green5"></div>
-        <div class="tecno">
-            <div id="tec">
+        <div class="blur" id="blur_green5"></div>
+        <div class="container_form" id="tecno">
+            <div class="container_atrib"  id="tec">
                 <h1 id="tec_txt">Tecnologias</h1>
                 <div id="tecs">
                     <div class="tec_form">
@@ -1321,10 +1200,10 @@
                 </div>
             </div>
         </div>
-        <div id="blur_yellow6"></div>
-        <div id="blur_green6"></div>
-        <div class="projetos">
-            <div id="pro">
+        <div class="blur" id="blur_yellow6"></div>
+        <div class="blur" id="blur_green6"></div>
+        <div class="container_form" id="projetos">
+            <div class="container_atrib" id="pro">
                 <div id="texts_pro">
                     <h1 id="tec_txt">Projetos</h1>
                     <p id="proj_txt">Projetos de Programação e Design realizados com o intuito de aprendizado e treino prático como portifólio</p>
@@ -1396,9 +1275,9 @@
                 
                 <div id="email">
                     <h1 id="nav_title">E-mail</h1>
-                    <p>davipinheiro.dev@gmail.com</p>
-                    <p>davipinheirodesouza2002@gmail.com</p>
-                    <p>davipi_sou@hotmail.com</p>
+                    <p><a href="mailto:davipinheiro.dev@gmail.com">davipinheiro.dev@gmail.com</a></p>
+                    <p><a href="mailto:davipinheirodesouza2002@gmail.com">davipinheirodesouza2002@gmail.com</a></p>
+                    <p><a href="mailto:davipi_sou@hotmail.com">davipi_sou@hotmail.com</a></p>
                 </div>
                 <div id="links">
                     <h1 id="nav_title">Links</h1>
