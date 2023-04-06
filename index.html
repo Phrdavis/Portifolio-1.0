@@ -32,6 +32,7 @@
             padding-top: 3em;
         }
         #avatar{
+            transition: 1s;
             position: absolute;
             top: 6em;
             left: 0em;
@@ -42,6 +43,34 @@
             border-radius: 10em;
             box-shadow: 0px 4px 7px 0px #686868;
         }
+        #avatar:hover{
+            transition: 1s;
+            top: 5.5em;
+            width: 260px;
+            animation: rotation 4s infinite;
+        }
+
+        @keyframes rotation{
+            0%{
+                transform: rotate(0deg);
+            }
+            20%{
+                transform: rotate(-30deg);
+            }
+            40%{
+                transform: rotate(30deg);
+            }
+            60%{
+                transform: rotate(-360deg);
+            }
+            80%{
+                transform: rotate(30deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+
         .blur{
             position: absolute;
             margin: auto;
@@ -208,12 +237,18 @@
             display: flex;
             background-color: #FEEFDC;
             justify-content: center;
+            align-items: center;
             border-radius: 5em;
             box-shadow: 0px 2px 2px 0px #d3d3d3;
         }
         .icons{
+            transition: 0.3s;
             width: 60px;
             margin: 0em 1em;
+        }
+        .icons:hover{
+            transition: 0.3s;
+            opacity: 70%;
         }
         .about{
             display: flex;
@@ -368,7 +403,7 @@
         }
         #cursos{
             width: 49em;
-            height: 35em;
+            height: 37em;
             padding: 3em 3em 3em 3em;
         }
         #tec{
@@ -811,6 +846,9 @@
             left: 42em;
             z-index: 1;
         }
+        #menu_hamb:hover ~ #linha1,#menu_hamb:hover ~ #linha2, #menu_hamb:hover ~ #linha3{
+            background-color: #575050;
+        }
         #link1, #link2,#link3,#link4,#link5,#link6,#link7{
             position: absolute;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -822,25 +860,35 @@
             left: 20em;
             visibility: hidden;
         }
+        #link1:hover, #link2:hover,#link3:hover,#link4:hover,#link5:hover,#link6:hover,#link7:hover{
+            color: #968528;
+        }
         #link1{
+            transition: 0.1s;
             top: 7em;
         }
         #link2{
+            transition: 0.1s;
             top: 10em;
         }
         #link3{
+            transition: 0.1s;
             top: 13em;
         }
         #link4{
+            transition: 0.1s;
             top: 16em;
         }
         #link5{
+            transition: 0.1s;
             top: 19em;
         }
         #link6{
+            transition: 0.1s;
             top: 22em;
         }
         #link7{
+            transition: 0.1s;
             top: 25em;
         }
         #menu_hamb:checked ~ #link1{
@@ -894,14 +942,6 @@
         #menu_hamb:checked ~ #link7{
             transition: 0.3s;
             transition-delay: 0.8s;
-            left: 30em;
-            z-index: 2;
-            visibility: visible;
-        }
-
-        #menu_hamb:checked ~ #link8{
-            transition: 0.3s;
-            transition-delay: 0.9s;
             left: 30em;
             z-index: 2;
             visibility: visible;
