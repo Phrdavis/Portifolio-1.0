@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/peeps-avatar-git.png">
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         body{
             background-color: #484848;
+        }
+        #span{
+            position: absolute;
+            top: 0;
         }
         .page{
             margin: 3em auto ;
@@ -739,11 +746,232 @@
             font-size: 0.8em;
             text-align: center;
         }
+        .linha{
+            height: 0.3em;
+            background-color: #000000;
+            border-radius: 1em;
+            position: absolute;
+        }
+        #linha1{
+            transition: 0.3s;
+            width: 2em;
+            top: 4.8em;
+            left: 29.5em;
+        }
+        #linha2{
+            transition: 0.4s;
+            width: 1.5em;
+            top: 5.4em;
+            left: 29.5em;
+        }
+        #linha3{
+            transition: 0.5s;
+            width: 1em;
+            top: 6em;
+            left: 29.5em;
+        }
+        #menu_hamb{
+            transition: 0.3s;
+            position: absolute;
+            top: 5em;
+            left: 35em;
+            width: 3em;
+            height: 3em;
+            cursor: pointer;
+            z-index: 2;
+            opacity: 0;
+        }
+        #menu_hamb:checked{
+            left: 48.5em;
+            z-index: 3;
+        }
+        #menu_hamb:checked ~ #menu{
+            transition: 0.3s;
+            border-radius: 1em;
+            position: absolute;
+            top: 4em;
+            left: 29em;
+            width: 15em;
+            height: 26em;
+            background-color: white;
+            z-index: 1;
+        }
+        #menu_hamb:checked ~ #linha1{
+            transition: 0.3s;
+            left: 41em;
+            z-index: 1;
+        }
+        #menu_hamb:checked ~ #linha2{
+            transition: 0.4s;
+            left: 41.5em;
+            z-index: 1;
+        }
+        #menu_hamb:checked ~ #linha3{
+            transition: 0.5s;
+            left: 42em;
+            z-index: 1;
+        }
+        #link1, #link2,#link3,#link4,#link5,#link6,#link7{
+            position: absolute;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            color: #d3be49;
+            text-decoration: none;
+            margin: 1em;
+            z-index: 2;
+            left: 20em;
+            visibility: hidden;
+        }
+        #link1{
+            top: 7em;
+        }
+        #link2{
+            top: 10em;
+        }
+        #link3{
+            top: 13em;
+        }
+        #link4{
+            top: 16em;
+        }
+        #link5{
+            top: 19em;
+        }
+        #link6{
+            top: 22em;
+        }
+        #link7{
+            top: 25em;
+        }
+        #menu_hamb:checked ~ #link1{
+            transition: 0.3s;
+            transition-delay: 0.2s;
+            left: 30em;
+            z-index: 2;
+            visibility: visible;
+        }
+
+        #menu_hamb:checked ~ #link2{
+            transition: 0.3s;
+            transition-delay: 0.3s;
+            left: 30em;
+            z-index: 2;
+            visibility: visible;
+        }
+
+        #menu_hamb:checked ~ #link3{
+            transition: 0.3s;
+            transition-delay: 0.4s;
+            left: 30em;
+            z-index: 2;
+            visibility: visible;
+        }
+
+        #menu_hamb:checked ~ #link4{
+            transition: 0.3s;
+            transition-delay: 0.5s;
+            left: 30em;
+            z-index: 2;
+            visibility: visible;
+        }
+
+        #menu_hamb:checked ~ #link5{
+            transition: 0.3s;
+            transition-delay: 0.6s;
+            left: 30em;
+            z-index: 2;
+            visibility: visible;
+        }
+
+        #menu_hamb:checked ~ #link6{
+            transition: 0.3s;
+            transition-delay: 0.7s;
+            left: 30em;
+            z-index: 2;
+            visibility: visible;
+        }
+
+        #menu_hamb:checked ~ #link7{
+            transition: 0.3s;
+            transition-delay: 0.8s;
+            left: 30em;
+            z-index: 2;
+            visibility: visible;
+        }
+
+        #menu_hamb:checked ~ #link8{
+            transition: 0.3s;
+            transition-delay: 0.9s;
+            left: 30em;
+            z-index: 2;
+            visibility: visible;
+        }
+
+
+        #top{
+            background-color: #6e6e6e;
+            width: 2em;
+            height: 2em;
+            padding: 1em;
+            border-radius: 10em;
+            position: fixed;
+            bottom: 2em;
+            right: 20em;
+            z-index: 3;
+        }
+        .seta_top{
+            height: 0.2em;
+            border-radius: 1em;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+        #seta_c{
+            width: 1.5em;
+            top: 0;
+            bottom: 0;
+            transform: rotate(90deg);
+        }
+        #seta_l{
+            width: 1em;
+            top: 1.4em;
+            left: 0.6em;
+            transform: rotate(45deg);
+        }
+        #seta_r{
+            width: 1em;
+            top: 1.4em;
+            right: 0.6em;
+            transform: rotate(-45deg);
+        }
+
+
     </style>
     <title>Curriculo Online</title>
 </head> 
 <body>
+    <span id="span"></span>
+    <a id="top" href="#span">
+        <div class="seta_top" id="seta_r"></div>
+        <div class="seta_top" id="seta_l"></div>
+        <div class="seta_top" id="seta_c"></div>
+    </a>
     <div class="page">
+        <input type="checkbox" name="menu" id="menu_hamb">
+        <div id="menu"></div>
+        <div class="linha" id="linha1"></div>
+        <div class="linha" id="linha2"></div>
+        <div class="linha" id="linha3"></div>
+        <a id="link1" href="#me">Sobre</a>
+        <a id="link2" href="#exp">Experiência</a>
+        <a id="link3" href="#hist">Histórico</a>
+        <a id="link4" href="#soft">Soft Skills</a>
+        <a id="link5" href="#cursos">Cursos</a>
+        <a id="link6" href="#tec">Tecnologias</a>
+        <a id="link7" href="#pro">Projetos</a>
+        
         <div id="homepage">
             <div class="blur" id="blur_green1"></div>
             <div class="blur" id="blur_yellow1"></div>
