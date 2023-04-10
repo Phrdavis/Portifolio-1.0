@@ -32,7 +32,7 @@
             padding-top: 3em;
         }
         #avatar{
-            transition: 1s;
+            transition: 0.3s;
             position: absolute;
             top: 6em;
             left: 0em;
@@ -44,7 +44,7 @@
             box-shadow: 0px 4px 7px 0px #686868;
         }
         #avatar:hover{
-            transition: 1s;
+            transition: 0.3s;
             top: 5.5em;
             width: 260px;
             animation: rotation 4s infinite;
@@ -203,6 +203,7 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
             color: #594438;
+            width: 15em;
             position: absolute;
             margin: auto;
             top: 11em;
@@ -215,6 +216,7 @@
             text-align: center;
             position: absolute;
             margin: auto;
+            width: 20em;
             top: 26em;
             left: 0em;
             right: 0em;
@@ -723,7 +725,7 @@
         }
 
         #footer{
-            width: 58.5em;
+            width: 58.6em;
             height: 12em;
             border-bottom-left-radius: 0.8em;
             border-bottom-right-radius: 0.8em;
@@ -786,30 +788,36 @@
             background-color: #000000;
             border-radius: 1em;
             position: absolute;
+            margin: auto;
         }
         #linha1{
             transition: 0.3s;
             width: 2em;
             top: 4.8em;
-            left: 29.5em;
+            left: 0em;
+            right: 56em;
         }
         #linha2{
             transition: 0.4s;
             width: 1.5em;
             top: 5.4em;
-            left: 29.5em;
+            left: 0em;
+            right: 56.5em;
         }
         #linha3{
             transition: 0.5s;
             width: 1em;
             top: 6em;
-            left: 29.5em;
+            left: 0em;
+            right: 57em;
         }
         #menu_hamb{
             transition: 0.3s;
             position: absolute;
+            margin: auto;
             top: 5em;
-            left: 35em;
+            left: 0em;
+            right: 67em;
             width: 3em;
             height: 3em;
             cursor: pointer;
@@ -817,136 +825,94 @@
             opacity: 0;
         }
         #menu_hamb:checked{
-            left: 48.5em;
+            right: 40.5em;
             z-index: 3;
-        }
-        #menu_hamb:checked ~ #menu{
-            transition: 0.3s;
-            border-radius: 1em;
-            position: absolute;
-            top: 4em;
-            left: 29em;
-            width: 15em;
-            height: 26em;
-            background-color: white;
-            z-index: 1;
         }
         #menu_hamb:checked ~ #linha1{
             transition: 0.3s;
-            left: 41em;
-            z-index: 1;
+            right: 34em;
+            z-index: 2;
         }
         #menu_hamb:checked ~ #linha2{
             transition: 0.4s;
-            left: 41.5em;
-            z-index: 1;
+            right: 33.5em;
+            z-index: 2;
         }
         #menu_hamb:checked ~ #linha3{
             transition: 0.5s;
-            left: 42em;
-            z-index: 1;
-        }
-        #menu_hamb:hover ~ #linha1,#menu_hamb:hover ~ #linha2, #menu_hamb:hover ~ #linha3{
-            background-color: #575050;
-        }
-        #link1, #link2,#link3,#link4,#link5,#link6,#link7{
-            position: absolute;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bolder;
-            color: #d3be49;
-            text-decoration: none;
-            margin: 1em;
+            right: 33em;
             z-index: 2;
-            left: 20em;
+        }
+
+        #menu{
+            transition: 0.3s;
+            position: absolute;
+            margin: auto;
+            z-index: 0;
+            top: 4em;
+            left: 0em;
+            right: 57em;
+            width: 1em;
+            height: 1em;
+            border-radius: 1em;
+            background-color: white;
             visibility: hidden;
         }
-        #link1:hover, #link2:hover,#link3:hover,#link4:hover,#link5:hover,#link6:hover,#link7:hover{
-            color: #968528;
+        #menu_hamb:checked ~ #menu{
+            transition: 0.3s;
+            z-index: 0;
+            right: 45em;
+            width: 15em;
+            height: 25em;
+            animation: menu 1s;
+            visibility: visible;
+        }
+        
+        @keyframes menu{
+            0%{
+                height: 4em;
+            }
+            50%{
+                height: 4em;
+            }
+            100%{
+                height: 25em;
+            }
+        }
+        .links_page{
+            position: absolute;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            left: 0em;
+            right: 70em;
+            top: 8em;
+            z-index: 10;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: #c59d19;
         }
         #link1{
-            transition: 0.1s;
-            top: 7em;
+            top: 8em;
         }
         #link2{
-            transition: 0.1s;
-            top: 10em;
+            top: 10.6em;
         }
         #link3{
-            transition: 0.1s;
-            top: 13em;
+            top: 13.2em;
         }
         #link4{
-            transition: 0.1s;
             top: 16em;
         }
         #link5{
-            transition: 0.1s;
             top: 19em;
         }
         #link6{
-            transition: 0.1s;
-            top: 22em;
+            top: 21.5em;
         }
         #link7{
-            transition: 0.1s;
-            top: 25em;
+            top: 24em;
         }
-        #menu_hamb:checked ~ #link1{
-            transition: 0.3s;
-            transition-delay: 0.2s;
-            left: 30em;
-            z-index: 2;
-            visibility: visible;
-        }
-
-        #menu_hamb:checked ~ #link2{
-            transition: 0.3s;
-            transition-delay: 0.3s;
-            left: 30em;
-            z-index: 2;
-            visibility: visible;
-        }
-
-        #menu_hamb:checked ~ #link3{
-            transition: 0.3s;
-            transition-delay: 0.4s;
-            left: 30em;
-            z-index: 2;
-            visibility: visible;
-        }
-
-        #menu_hamb:checked ~ #link4{
-            transition: 0.3s;
-            transition-delay: 0.5s;
-            left: 30em;
-            z-index: 2;
-            visibility: visible;
-        }
-
-        #menu_hamb:checked ~ #link5{
-            transition: 0.3s;
-            transition-delay: 0.6s;
-            left: 30em;
-            z-index: 2;
-            visibility: visible;
-        }
-
-        #menu_hamb:checked ~ #link6{
-            transition: 0.3s;
-            transition-delay: 0.7s;
-            left: 30em;
-            z-index: 2;
-            visibility: visible;
-        }
-
-        #menu_hamb:checked ~ #link7{
-            transition: 0.3s;
-            transition-delay: 0.8s;
-            left: 30em;
-            z-index: 2;
-            visibility: visible;
-        }
-
 
         #top{
             background-color: #6e6e6e;
@@ -998,25 +964,26 @@
         <div class="seta_top" id="seta_l"></div>
         <div class="seta_top" id="seta_c"></div>
     </a>
-    <div class="page">
-        <input type="checkbox" name="menu" id="menu_hamb">
-        <div id="menu"></div>
-        <div class="linha" id="linha1"></div>
-        <div class="linha" id="linha2"></div>
-        <div class="linha" id="linha3"></div>
-        <a id="link1" href="#me">Sobre</a>
-        <a id="link2" href="#exp">Experiência</a>
-        <a id="link3" href="#hist">Histórico</a>
-        <a id="link4" href="#soft">Soft Skills</a>
-        <a id="link5" href="#cursos">Cursos</a>
-        <a id="link6" href="#tec">Tecnologias</a>
-        <a id="link7" href="#pro">Projetos</a>
-        
+    <div class="page">        
         <div id="homepage">
             <div class="blur" id="blur_green1"></div>
             <div class="blur" id="blur_yellow1"></div>
             <div class="blur" id="blur_yellow2"></div>
             <div class="blur" id="blur_green2"></div>
+            
+            <input type="checkbox" name="menu" id="menu_hamb">
+            
+            <div class="linha" id="linha1"></div>
+            <div class="linha" id="linha2"></div>
+            <div class="linha" id="linha3"></div>
+            <div id="menu"></div>
+            <a class="links_page" id="link1" href="#me">Sobre</a>
+            <a class="links_page" id="link2" href="#exp">Experiência</a>
+            <a class="links_page" id="link3" href="#hist">Histórico</a>
+            <a class="links_page" id="link4" href="#soft">Soft Skills</a>
+            <a class="links_page" id="link5" href="#cursos">Cursos</a>
+            <a class="links_page" id="link6" href="#tec">Tecnologias</a>
+            <a class="links_page" id="link7" href="#pro">Projetos</a>
             <img id="avatar" src="images/peeps-avatar.png" alt="Avatar Davi">
             <h1 id="nome">Davi Pinheiro de Souza</h1>
             <p id="funcs">Programador - WEB - UI Design</p>
