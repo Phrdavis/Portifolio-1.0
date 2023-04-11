@@ -1,4 +1,7 @@
 # phrdavis.github.io
-Meu portifolio online:
 
+AVISO: Ainda em desenvolvimento!!
+
+
+Meu portifolio online:
 https://phrdavis.github.io/
