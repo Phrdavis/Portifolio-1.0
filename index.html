@@ -1037,10 +1037,69 @@
             transform: rotate(-45deg);
         }
 
+        #teste{
+            background-color: #B6BFA3;
+            border-radius: 1em;
+            width: 2em;
+            height: 2em;
+            transform: rotate(0deg);
+            position: fixed;
+            top: 0em;
+            right: 0em;
+            z-index: 100;
+            box-shadow: 0px 2px 50px 2px #B6BFA3;
+        }
+        #teste1{
+            background-color: #B6BFA3;
+            border-radius: 1em;
+            width: 2em;
+            height: 2em;
+            transform: rotate(0deg);
+            position: fixed;
+            top: 0em;
+            right: 0em;
+            z-index: 100;
+            transition: 0.05s;
+            opacity: 75%;
+            box-shadow: 0px 2px 50px 2px #B6BFA3;
+        }
+        #teste2{
+            background-color: #B6BFA3;
+            border-radius: 1em;
+            width: 2em;
+            height: 2em;
+            transform: rotate(0deg);
+            position: fixed;
+            top: 0em;
+            right: 0em;
+            z-index: 100;
+            transition: 0.07s;
+            opacity: 50%;
+            box-shadow: 0px 2px 50px 2px #B6BFA3;
+        }
+        #teste3{
+            background-color: #B6BFA3;
+            border-radius: 1em;
+            width: 2em;
+            height: 2em;
+            transform: rotate(0deg);
+            position: fixed;
+            top: 0em;
+            right: 0em;
+            z-index: 100;
+            transition: 0.09s;
+            opacity: 25%;
+            box-shadow: 0px 2px 50px 2px #B6BFA3;
+        }
+
     </style>
     <title>Curriculo Online</title>
 </head> 
-<body>
+<body onmousemove="mouse_ball(event)" onclick="color_ball(event)" >
+    <div id="teste" ></div>
+    <div id="teste1" ></div>
+    <div id="teste2" ></div>
+    <div id="teste3" ></div>
     <span id="span"></span>
     <a id="top" href="#span">
         <div class="seta_top" id="seta_r"></div>
