@@ -35,5 +35,6 @@ function color_ball(event){
         document.getElementById("ball2").style.backgroundColor = "#B6BFA3"
         document.getElementById("ball3").style.backgroundColor = "#B6BFA3"
         count = 0
+        
     }
 }
