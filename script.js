@@ -192,7 +192,7 @@ function mode(event){
 
         for(let i = 0; i < sigla.length; i++){
             sigla[i].style.backgroundColor = "#5a5a5a";
-            sigla[i].style.color = "#FFFFFF";
+            sigla[i].style.color = "#ace338";
             sigla[i].style.boxShadow = "0px 2px 5px 0px #383636";
         }
 
@@ -209,7 +209,6 @@ function mode(event){
         for(let i = 0; i < btn_proj.length; i++){
             btn_proj[i].style.boxShadow = "0px 2px 5px 0px #383636";
         }
-
 
         theme = 1;
     }
