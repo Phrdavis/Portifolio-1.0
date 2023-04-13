@@ -69,9 +69,18 @@ function mode(event){
     var linha3 = document.getElementById("linha3");
     var nome = document.getElementById("nome");
     var funcs = document.getElementById("funcs");
+    var nav = document.getElementsByClassName("nav")[0];
     var me = document.getElementById("me");
     var mep = me.getElementsByTagName("p");
+    var hobs = document.getElementsByClassName("hobs")[0];
     var container = document.getElementsByClassName("container_atrib");
+    var comp = document.getElementsByClassName("comp");
+    var skill_block = document.getElementsByClassName("skill_bloc");
+    var sigla = document.getElementsByClassName("sigla");
+    var tec_form = document.getElementsByClassName("tec_form");
+    var proj_txt = document.getElementById("proj_txt");
+    var info_proj = document.getElementsByClassName("info_proj");
+    var btn_proj = document.getElementsByClassName("btn_proj");
 
     if(theme == 1){
         bot_on.style.right = "2.3em";
@@ -87,16 +96,53 @@ function mode(event){
         linha3.style.backgroundColor = "#000000";
         nome.style.color = "#594438";
         funcs.style.color = "#000000";
-        me.style.backgroundColor = "#FFFFFF"
-        me.style.boxShadow = "0px 2px 5px 2px #d3d3d3"
-        me.style.color = "#000000"
+        nav.style.backgroundColor = "#FEEFDC";
+        nav.style.boxShadow = "0px 2px 5px 2px #d3d3d3";
+        me.style.backgroundColor = "#FFFFFF";
+        me.style.boxShadow = "0px 2px 5px 2px #d3d3d3";
+        me.style.color = "#000000";
         
         for(let i = 0; i < mep.length; i++){
-            mep[i].style.color = "#000000"
+            mep[i].style.color = "#000000";
         }
 
+        hobs.style.boxShadow = "0px 2px 5px 2px #d3d3d3";
+
         for(let i = 0; i < container.length; i++){
-            container[i].style.backgroundColor = "#FFFFFF"
+            container[i].style.backgroundColor = "#FFFFFF";
+            container[i].style.color = "#000000";
+            container[i].style.boxShadow = "0px 2px 5px 2px #d3d3d3";
+        }
+
+        for(let i = 0; i < comp.length; i++){
+            comp[i].style.backgroundColor = "#FBF0E2";
+            comp[i].style.color = "#B6BFA3";
+        }
+
+        for(let i = 0; i < skill_block.length; i++){
+            skill_block[i].style.backgroundColor = "#FFFFFF";
+            skill_block[i].style.color = "#000000";
+            skill_block[i].style.boxShadow = "0px 2px 5px 2px #d3d3d3";
+        }
+
+        for(let i = 0; i < sigla.length; i++){
+            sigla[i].style.backgroundColor = "#FFFFFF";
+            sigla[i].style.color = "#B6BFA3";
+            sigla[i].style.boxShadow = "0px 2px 5px 2px #d3d3d3";
+        }
+
+        for(let i = 0; i < tec_form.length; i++){
+            tec_form[i].style.boxShadow = "0px 2px 5px 2px #d3d3d3";
+        }
+        
+        proj_txt.style.color = "#727272"
+
+        for(let i = 0; i < info_proj.length; i++){
+            info_proj[i].style.backgroundColor = "#FFFFFF";
+        }
+
+        for(let i = 0; i < btn_proj.length; i++){
+            btn_proj[i].style.boxShadow = "0px 2px 5px 2px #d3d3d3";
         }
 
         theme = 0;
@@ -115,21 +161,56 @@ function mode(event){
         linha3.style.backgroundColor = "#5f5f5f";
         nome.style.color = "#5c5c5c";
         funcs.style.color = "#000000";
-        me.style.backgroundColor = "#5f5f5f"
-        me.style.boxShadow = "0px 2px 5px 2px #414141"
-        me.style.color = "#FFFFFF"
+        nav.style.backgroundColor = "#747474";
+        nav.style.boxShadow = "0px 2px 5px 0px #414141";
+        me.style.backgroundColor = "#5f5f5f";
+        me.style.boxShadow = "0px 2px 5px 0px #414141";
+        me.style.color = "#FFFFFF";
 
         for(let i = 0; i < mep.length; i++){
-            mep[i].style.color = "#FFFFFF"
+            mep[i].style.color = "#FFFFFF";
         }
 
+        hobs.style.boxShadow = "0px 2px 5px 0px #6a6a6a";
+
         for(let i = 0; i < container.length; i++){
-            container[i].style.backgroundColor = "#5f5f5f"
-            container[i].style.color = "#FFFFFF"
+            container[i].style.backgroundColor = "#5f5f5f";
+            container[i].style.color = "#FFFFFF";
+            container[i].style.boxShadow = "0px 2px 5px 0px #414141";
         }
+
+        for(let i = 0; i < comp.length; i++){
+            comp[i].style.backgroundColor = "#9b958e";
+            comp[i].style.color = "#ace338";
+        }
+
+        for(let i = 0; i < skill_block.length; i++){
+            skill_block[i].style.backgroundColor = "#898989";
+            skill_block[i].style.color = "#FFFFFF";
+            skill_block[i].style.boxShadow = "0px 2px 5px 0px #383636";
+        }
+
+        for(let i = 0; i < sigla.length; i++){
+            sigla[i].style.backgroundColor = "#5a5a5a";
+            sigla[i].style.color = "#FFFFFF";
+            sigla[i].style.boxShadow = "0px 2px 5px 0px #383636";
+        }
+
+        for(let i = 0; i < tec_form.length; i++){
+            tec_form[i].style.boxShadow = "0px 2px 5px 0px #383636";
+        }
+        
+        proj_txt.style.color = "#c7c5c5"
+
+        for(let i = 0; i < info_proj.length; i++){
+            info_proj[i].style.backgroundColor = "#5f5f5f";
+        }
+
+        for(let i = 0; i < btn_proj.length; i++){
+            btn_proj[i].style.boxShadow = "0px 2px 5px 0px #383636";
+        }
+
 
         theme = 1;
     }
 }
-
-
