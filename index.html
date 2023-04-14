@@ -1156,7 +1156,7 @@
             }
         }
 
-        @media screen and (max-width: 1030px){
+        @media screen and (max-width: 1120px){
             #bot_mode{
                 top: 4em;
                 left: 38em;
@@ -1174,9 +1174,11 @@
             }
             #footer{
                 width: 46em;
+                top: 645.7em;
             }
             #bar{
                 width: 50em;
+                top: 644em;
             }
             #linha1{
                 right: 45em;
@@ -1238,32 +1240,20 @@
                 transition: 0.5s;
                 right: 47em;
             }
-            #link2{
-                top: 10.6em;
-            }
             #menu_hamb:checked ~ #link2{
                 visibility: visible;
                 transition: 0.6s;
                 right: 47em;
-            }
-            #link3{
-                top: 13.2em;
             }
             #menu_hamb:checked ~ #link3{
                 visibility: visible;
                 transition: 0.7s;
                 right: 47em;
             }
-            #link4{
-                top: 16em;
-            }
             #menu_hamb:checked ~ #link4{
                 visibility: visible;
                 transition: 0.8s;
                 right: 47em;
-            }
-            #link5{
-                top: 19em;
             }
             #menu_hamb:checked ~ #link5{
                 visibility: visible;
@@ -1441,12 +1431,112 @@
                 padding: 0.5em;
                 font-size: 0.7em;
             }
+        }
+
+        @media screen and (max-width: 850px){
+            .page{
+                width: 40em;
+            }
+            #homepage{
+                width: 40em;
+            }
+            #linha1{
+                right: 35em;
+            }
+            #linha2{
+                right: 35.5em;
+            }
+            #linha3{
+                right: 36em;
+            }
+            #menu_hamb{
+                right: 42em;
+            }
+            #menu_hamb:checked{
+                right: 14em;
+                z-index: 3;
+            }
+            #menu_hamb:checked ~ #linha1{
+                transition: 0.3s;
+                right: 11.5em;
+                z-index: 2;
+            }
+            #menu_hamb:checked ~ #linha2{
+                transition: 0.4s;
+                right: 11em;
+                z-index: 2;
+            }
+            #menu_hamb:checked ~ #linha3{
+                transition: 0.5s;
+                right: 10.5em;
+                z-index: 2;
+            }
+
+            #menu{
+                transition: 0.3s;
+                position: absolute;
+                margin: auto;
+                z-index: 0;
+                top: 4em;
+                left: 0em;
+                right: 35em;
+                width: 1em;
+                height: 1em;
+                border-radius: 1em;
+                background-color: white;
+            }
+            #menu_hamb:checked ~ #menu{
+                transition: 0.3s;
+                z-index: 0;
+                right: 23em;
+                width: 15em;
+                height: 25em;
+                animation: menu 1s;
+                visibility: visible;
+                z-index: 10;
+            }
+            #menu_hamb:checked ~ #link1{
+                visibility: visible;
+                transition: 0.5s;
+                right: 25em;
+            }
+            #menu_hamb:checked ~ #link2{
+                visibility: visible;
+                transition: 0.6s;
+                right: 25em;
+            }
+            #menu_hamb:checked ~ #link3{
+                visibility: visible;
+                transition: 0.7s;
+                right: 25em;
+            }
+            #menu_hamb:checked ~ #link4{
+                visibility: visible;
+                transition: 0.8s;
+                right: 25em;
+            }
+            #menu_hamb:checked ~ #link5{
+                visibility: visible;
+                transition: 0.9s;
+                right: 25em;
+            }
+            #menu_hamb:checked ~ #link6{
+                visibility: visible;
+                transition: 1s;
+                right: 25em;
+            }
+            #menu_hamb:checked ~ #link7{
+                visibility: visible;
+                transition: 1.1s;
+                right: 25em;
+            }
             #bar{
-                top: 644em;
+                width: 40em;
             }
             #footer{
-                top: 645.7em;
+                width: 36em;
             }
+            
         }
     </style>
     <title>Curriculo Online</title>
