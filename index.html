@@ -1560,6 +1560,98 @@
                 right: 0em;
                 z-index: 100;
             }
+            
+            #linha1{
+                right: 20em;
+            }
+            #linha2{
+                right: 20.5em;
+            }
+            #linha3{
+                right: 21em;
+            }
+            #menu_hamb{
+                right: 24em;
+                /* opacity: 100%; */
+            }
+            #menu_hamb:checked{
+                right: 2em;
+                z-index: 30;
+            }
+            #menu_hamb:checked ~ #linha1{
+                transition: 0.3s;
+                right: 2em;
+                z-index: 29;
+            }
+            #menu_hamb:checked ~ #linha2{
+                transition: 0.4s;
+                right: 1.5em;
+                z-index: 29;
+            }
+            #menu_hamb:checked ~ #linha3{
+                transition: 0.5s;
+                right: 1em;
+                z-index: 29;
+            }
+
+            #menu{
+                transition: 0.3s;
+                position: absolute;
+                margin: auto;
+                z-index: 0;
+                top: 4em;
+                left: 0em;
+                right: 19em;
+                width: 1em;
+                height: 1em;
+                border-radius: 1em;
+                background-color: white;
+            }
+            #menu_hamb:checked ~ #menu{
+                transition: 0.3s;
+                z-index: 0;
+                right: 10em;
+                width: 12em;
+                height: 25em;
+                animation: menu 1s;
+                visibility: visible;
+                z-index: 10;
+            }
+            #menu_hamb:checked ~ #link1{
+                visibility: visible;
+                transition: 0.5s;
+                right: 7em;
+            }
+            #menu_hamb:checked ~ #link2{
+                visibility: visible;
+                transition: 0.6s;
+                right: 7em;
+            }
+            #menu_hamb:checked ~ #link3{
+                visibility: visible;
+                transition: 0.7s;
+                right: 7em;
+            }
+            #menu_hamb:checked ~ #link4{
+                visibility: visible;
+                transition: 0.8s;
+                right: 7em;
+            }
+            #menu_hamb:checked ~ #link5{
+                visibility: visible;
+                transition: 0.9s;
+                right: 7em;
+            }
+            #menu_hamb:checked ~ #link6{
+                visibility: visible;
+                transition: 1s;
+                right: 7em;
+            }
+            #menu_hamb:checked ~ #link7{
+                visibility: visible;
+                transition: 1.1s;
+                right: 7em;
+            }
             #avatar {
                 transition: 0.3s;
                 position: absolute;
