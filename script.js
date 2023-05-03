@@ -57,6 +57,7 @@ function color_ball(event){
 }
 
 function mode(event){
+    console.log("uepa")
     var bot_on= document.getElementById("bot_on");
     var light_mode = document.getElementById("light_mode");
     var dark_mode = document.getElementById("dark_mode");
